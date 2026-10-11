@@ -32,6 +32,13 @@ ${ARCH_PREFIX[@]+"${ARCH_PREFIX[@]}"} "$UNITY" -batchmode -quit -nographics \
   -buildOutput "$OUT" \
   -logFile "$PROJECT/Builds/build-macos.log"
 
+# The game server (StreamingAssets/server_settings.json) uses plain http://.
+# Allow it explicitly so macOS App Transport Security never blocks it.
+PLIST="$OUT/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c "Delete :NSAppTransportSecurity" "$PLIST" 2>/dev/null || true
+/usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity dict" \
+  -c "Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" "$PLIST"
+
 # Ad-hoc sign so Gatekeeper / Apple Silicon (Rosetta) will launch it locally.
 xattr -cr "$OUT" || true
 codesign --force --deep --sign - "$OUT"

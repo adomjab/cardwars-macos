@@ -74,3 +74,20 @@ and use the same menu item.
 - If graphics glitch on Metal, launch with OpenGL instead:
   `open CardWars.app --args -force-glcore`.
 - Save data goes in `~/Library/Application Support/shishkabob/Card Wars/`.
+
+## Game server
+
+The game talks to the community server set in
+`Assets/StreamingAssets/server_settings.json` (`http://cardwars.retroretreat.net/`).
+The Windows release uses the same server, so Mac players share accounts,
+saves and multiplayer with Windows players. The official Cartoon Network
+servers shut down in 2020.
+
+The server is used for login, cloud saves, multiplayer, tournaments,
+leaderboards and content updates. Your progress is also saved on your
+computer, and when the server can't be reached the game keeps going without
+cloud saving and shows "Connection" errors.
+
+To use a different server without rebuilding, edit
+`CardWars.app/Contents/Resources/Data/StreamingAssets/server_settings.json`,
+then re-sign the app with `codesign --force --deep --sign - CardWars.app`.
