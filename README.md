@@ -24,8 +24,8 @@ Rosetta 2. That works fine; you just need Rosetta installed.
 
 1. Open Terminal and install the basics (skip any you already have):
    ```bash
-   softwareupdate --install-rosetta --agree-to-license   # Intel app support
-   xcode-select --install                                # git + codesign
+   softwareupdate --install-rosetta --agree-to-license
+   xcode-select --install
    ```
 2. Install [Unity Hub](https://unity.com/download), sign in, and activate a
    free Personal license (Hub > Settings > Licenses).
@@ -52,10 +52,13 @@ You need a Mac with **Unity 2017.4.40f1**. In Unity Hub, open
 [Unity download archive](https://unity.com/releases/editor/archive). Mac build
 support is built into the Mac editor.
 
+`setup.sh` clones CardWars into `./CardWars` and applies the patch;
+`build.sh` builds `./CardWars/Builds/macOS/CardWars.app`.
+
 ```bash
 cd cardwars-macos
-./setup.sh            # clones CardWars into ./CardWars and applies the patch
-./build.sh            # builds ./CardWars/Builds/macOS/CardWars.app
+./setup.sh
+./build.sh
 open CardWars/Builds/macOS/CardWars.app
 ```
 
