@@ -1,0 +1,233 @@
+diff --git a/Assets/Editor/MacBuild.cs b/Assets/Editor/MacBuild.cs
+new file mode 100644
+index 00000000..e10be0ad
+--- /dev/null
++++ b/Assets/Editor/MacBuild.cs
+@@ -0,0 +1,57 @@
++using System;
++using System.IO;
++using System.Linq;
++using UnityEditor;
++using UnityEngine;
++
++// Builds a macOS .app of Card Wars.
++// From the editor: menu "Card Wars > Build macOS".
++// From the command line:
++//   Unity -batchmode -quit -projectPath <project> -executeMethod MacBuild.BuildMacOS [-buildOutput <path/CardWars.app>]
++public static class MacBuild
++{
++	private const string DefaultOutput = "Builds/macOS/CardWars.app";
++
++	[MenuItem("Card Wars/Build macOS")]
++	public static void BuildMacOS()
++	{
++		string output = GetArg("-buildOutput") ?? DefaultOutput;
++		Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(output)));
++
++		string[] scenes = EditorBuildSettings.scenes
++			.Where(s => s.enabled)
++			.Select(s => s.path)
++			.ToArray();
++
++		PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Standalone, "com.shishkabob.cardwars");
++		PlayerSettings.macRetinaSupport = true;
++		PlayerSettings.resizableWindow = true;
++
++		EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneOSX);
++
++		var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneOSX, BuildOptions.None);
++		if (!string.IsNullOrEmpty(report))
++		{
++			Debug.LogError("macOS build failed: " + report);
++			if (UnityEditorInternal.InternalEditorUtility.inBatchMode)
++			{
++				EditorApplication.Exit(1);
++			}
++			return;
++		}
++		Debug.Log("macOS build written to " + Path.GetFullPath(output));
++	}
++
++	private static string GetArg(string name)
++	{
++		string[] args = Environment.GetCommandLineArgs();
++		for (int i = 0; i < args.Length - 1; i++)
++		{
++			if (args[i] == name)
++			{
++				return args[i + 1];
++			}
++		}
++		return null;
++	}
++}
+diff --git a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader b/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader
+index 68adf624..1c0ea3a1 100644
+--- a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader
++++ b/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader
+@@ -1,64 +1,44 @@
++// Rewritten from a GLES-only compiled shader so it also works on Metal,
++// OpenGL Core and Direct3D (desktop builds, incl. macOS).
+ Shader "Unlit/Alpha With Fade 2" {
+ Properties {
+  _Color ("Color Tint", Color) = (1,1,1,1)
+  _MainTex ("Base (RGB) Alpha (A)", 2D) = "white" { }
+ }
+-SubShader { 
++SubShader {
+  Tags { "QUEUE"="Transparent-1" }
+  Pass {
+   Tags { "QUEUE"="Transparent-1" }
+   ZWrite Off
+   Blend SrcAlpha OneMinusSrcAlpha
+-  GpuProgramID 62138
+-Program "vp" {
+-SubProgram "gles " {
+-"!!GLES
+-#version 100
+ 
+-#ifdef VERTEX
+-attribute vec4 _glesVertex;
+-attribute vec4 _glesMultiTexCoord0;
+-uniform highp mat4 glstate_matrix_mvp;
+-uniform highp vec4 _MainTex_ST;
+-varying lowp vec4 xlv_COLOR0;
+-varying highp vec2 xlv_TEXCOORD0;
+-void main ()
+-{
+-  lowp vec4 tmpvar_1;
+-  mediump vec4 tmpvar_2;
+-  tmpvar_2 = clamp (vec4(0.0, 0.0, 0.0, 1.1), 0.0, 1.0);
+-  tmpvar_1 = tmpvar_2;
+-  highp vec4 tmpvar_3;
+-  tmpvar_3.w = 1.0;
+-  tmpvar_3.xyz = _glesVertex.xyz;
+-  xlv_COLOR0 = tmpvar_1;
+-  xlv_TEXCOORD0 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
+-  gl_Position = (glstate_matrix_mvp * tmpvar_3);
+-}
++  CGPROGRAM
++  #pragma vertex vert
++  #pragma fragment frag
++  #include "UnityCG.cginc"
+ 
++  sampler2D _MainTex;
++  float4 _MainTex_ST;
++  fixed4 _Color;
+ 
+-#endif
+-#ifdef FRAGMENT
+-uniform sampler2D _MainTex;
+-uniform lowp vec4 _Color;
+-varying highp vec2 xlv_TEXCOORD0;
+-void main ()
+-{
+-  lowp vec4 tmpvar_1;
+-  tmpvar_1 = (texture2D (_MainTex, xlv_TEXCOORD0) * _Color);
+-  gl_FragData[0] = tmpvar_1;
+-}
++  struct v2f {
++   float4 pos : SV_POSITION;
++   float2 uv : TEXCOORD0;
++  };
+ 
++  v2f vert (appdata_base v)
++  {
++   v2f o;
++   o.pos = UnityObjectToClipPos(v.vertex);
++   o.uv = TRANSFORM_TEX(v.texcoord, _MainTex);
++   return o;
++  }
+ 
+-#endif
+-"
+-}
+-}
+-Program "fp" {
+-SubProgram "gles " {
+-"!!GLES"
+-}
+-}
++  fixed4 frag (v2f i) : SV_Target
++  {
++   return tex2D(_MainTex, i.uv) * _Color;
++  }
++  ENDCG
+  }
+ }
+-}
+\ No newline at end of file
++}
+diff --git a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader.meta b/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader.meta
+index 5c44989b..e033eec5 100644
+--- a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader.meta
++++ b/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader.meta
+@@ -2,9 +2,9 @@ fileFormatVersion: 2
+ guid: 4332e79bdd3ff544f973ac5d38c8e19d
+ timeCreated: 1698411918
+ licenseType: Free
+-NativeFormatImporter:
++ShaderImporter:
+   externalObjects: {}
+-  mainObjectFileID: 4800000
++  defaultTextures: []
+   userData:
+   assetBundleName:
+   assetBundleVariant:
+diff --git a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs b/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
+index 4395455b..a26f0e49 100644
+--- a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
++++ b/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
+@@ -493,7 +493,7 @@ public class SQContentPatcher : EventDispatcher<string>
+ 			string text2 = null;
+ 			if (value.Name.Contains("Language"))
+ 			{
+-				string text3 = Application.dataPath + Path.PathSeparator + value.Name;
++				string text3 = Path.Combine(Application.dataPath, value.Name);
+ 				if (File.Exists(text3))
+ 				{
+ 					text = text3;
+diff --git a/Assets/Scripts/Assembly-CSharp/SQSettings.cs b/Assets/Scripts/Assembly-CSharp/SQSettings.cs
+index bdf9599e..dd606f88 100644
+--- a/Assets/Scripts/Assembly-CSharp/SQSettings.cs
++++ b/Assets/Scripts/Assembly-CSharp/SQSettings.cs
+@@ -113,6 +113,7 @@ public class SQSettings
+ 	{
+ 	}
+ 
++#if UNITY_IOS && !UNITY_EDITOR
+ 	[DllImport("__Internal")]
+ 	private static extern string getBundleIdentifier();
+ 
+@@ -121,6 +122,7 @@ public class SQSettings
+ 
+ 	[DllImport("__Internal")]
+ 	private static extern string getCFBundleShortVersion();
++#endif
+ 
+ 	private static string getJsonPath(string filePath)
+ 	{
+diff --git a/ProjectSettings/ProjectSettings.asset b/ProjectSettings/ProjectSettings.asset
+index 4e2287c6..b9265584 100644
+--- a/ProjectSettings/ProjectSettings.asset
++++ b/ProjectSettings/ProjectSettings.asset
+@@ -158,7 +158,8 @@ PlayerSettings:
+   resolutionScalingMode: 0
+   androidSupportedAspectRatio: 1
+   androidMaxAspectRatio: 2.1
+-  applicationIdentifier: {}
++  applicationIdentifier:
++    Standalone: com.shishkabob.cardwars
+   buildNumber: {}
+   AndroidBundleVersionCode: 1
+   AndroidMinSdkVersion: 16
+@@ -269,6 +270,9 @@ PlayerSettings:
+   - m_BuildTarget: WindowsStandaloneSupport
+     m_APIs: 02000000
+     m_Automatic: 1
++  - m_BuildTarget: MacStandaloneSupport
++    m_APIs: 1000000011000000
++    m_Automatic: 0
+   m_BuildTargetVRSettings: []
+   m_BuildTargetEnableVuforiaSettings: []
+   openGLRequireES31: 0
