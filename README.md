@@ -17,7 +17,35 @@ The rest of the game code was already cross-platform. It has no native plugins,
 and the Windows-only checks in it (NGUI's half-pixel offset for Direct3D 9) are
 already right for macOS.
 
-## Build it
+## Step by step on an M1 / Apple Silicon Mac
+
+Unity 2017 and the game it builds are Intel apps, so on an M1 they run through
+Rosetta 2. That works fine; you just need Rosetta installed.
+
+1. Open Terminal and install the basics (skip any you already have):
+   ```bash
+   softwareupdate --install-rosetta --agree-to-license   # Intel app support
+   xcode-select --install                                # git + codesign
+   ```
+2. Install [Unity Hub](https://unity.com/download), sign in, and activate a
+   free Personal license (Hub > Settings > Licenses).
+3. Install Unity **2017.4.40f1**. Paste `unityhub://2017.4.40f1/6e14067f8a9a`
+   into Safari's address bar to open it in Hub. Hub installs the Intel editor
+   automatically, because no Apple Silicon build exists for 2017.
+4. Get this folder and run the scripts. CardWars is about 1.5 GB to download,
+   and the first build takes a while because Unity imports every asset under
+   Rosetta.
+   ```bash
+   git clone -b claude/cardwars-macos-compat-jeh7xi https://github.com/adomjab/aseprite-builder.git
+   cd aseprite-builder/cardwars-macos
+   ./setup.sh
+   ./build.sh
+   open CardWars/Builds/macOS/CardWars.app
+   ```
+   `build.sh` detects the M1, checks for Rosetta and runs Unity under it.
+   If the build fails, the details are in `CardWars/Builds/build-macos.log`.
+
+## Build it (any Mac)
 
 You need a Mac with **Unity 2017.4.40f1**. In Unity Hub, open
 `unityhub://2017.4.40f1/6e14067f8a9a` or use the
@@ -38,7 +66,8 @@ and use the same menu item.
 ## Notes
 
 - Unity 2017.4 builds Intel (x86_64) apps. On Apple Silicon Macs they run
-  through Rosetta 2, which macOS offers to install the first time you launch one.
+  through Rosetta 2, and an M1 has plenty of power for this game even with the
+  translation.
 - `build.sh` ad-hoc signs the app. If you copy the app to another Mac and
   macOS says it is "damaged", run `xattr -cr CardWars.app`, or right-click the
   app and choose **Open**.
