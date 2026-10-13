@@ -8,10 +8,13 @@ follow [PLAY.md](PLAY.md) and never need Unity.
 ```
 cd ~/cardwars-macos
 git pull
-./package.sh
+./package.sh --server 35.229.126.223
 ```
 
-This re-signs the app and creates `CardWars-macOS.zip` in the same folder.
+`--server` sets the game server inside the app, so everyone who downloads it
+is connected to your server automatically. The script then re-signs the app
+and creates `CardWars-macOS.zip` in the same folder. (Leave `--server` out to
+keep whatever server the app already has; the script always prints it.)
 It looks for the app in `CardWars/Builds/macOS/` first, then
 `/Applications/`. To package a different copy, pass its path:
 `./package.sh /path/to/CardWars.app`.

@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 # Zip a built CardWars.app for sharing (upload the zip to a GitHub Release).
-# Usage: ./package.sh [path/to/CardWars.app]
+# Usage: ./package.sh [--server http://YOUR-IP/] [path/to/CardWars.app]
+#   --server  sets the game server the shared app connects to
 # Default app: ./CardWars/Builds/macOS/CardWars.app, or /Applications/CardWars.app
 set -euo pipefail
 
-APP="${1:-}"
+SERVER=""
+APP=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --server) SERVER="${2:-}"; shift 2 ;;
+    --server=*) SERVER="${1#--server=}"; shift ;;
+    -h|--help) sed -n '2,5p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    *) APP="$1"; shift ;;
+  esac
+done
+
 if [ -z "$APP" ]; then
   for candidate in "CardWars/Builds/macOS/CardWars.app" "/Applications/CardWars.app"; do
     if [ -d "$candidate" ]; then APP="$candidate"; break; fi
@@ -13,6 +24,24 @@ fi
 if [ -z "$APP" ] || [ ! -d "$APP" ]; then
   echo "CardWars.app not found. Pass its path: ./package.sh /path/to/CardWars.app" >&2
   exit 1
+fi
+
+SETTINGS="$APP/Contents/Resources/Data/StreamingAssets/server_settings.json"
+if [ -n "$SERVER" ]; then
+  case "$SERVER" in
+    http://*) ;;
+    https://*) echo "The game can't use https. Use http://..." >&2; exit 1 ;;
+    *) SERVER="http://$SERVER" ;;
+  esac
+  case "$SERVER" in */) ;; *) SERVER="$SERVER/" ;; esac
+  printf '{\n    "type" : "server_settings",\n    "server_url" : "%s"\n}\n' "$SERVER" > "$SETTINGS"
+fi
+CURRENT="$(sed -n 's/.*"server_url" *: *"\([^"]*\)".*/\1/p' "$SETTINGS")"
+echo "Game server in this package: $CURRENT"
+if curl -fsS -m 5 "$CURRENT" >/dev/null 2>&1; then
+  echo "  (reachable)"
+else
+  echo "  WARNING: that server isn't answering right now." >&2
 fi
 
 OUT="$(pwd)/CardWars-macOS.zip"
