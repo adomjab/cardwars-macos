@@ -1,4 +1,8 @@
-# Card Wars on macOS
+# Card Wars on macOS (maintainer branch)
+
+> This `dev` branch holds the build, packaging and server tools. The `main`
+> branch only has what players need: the install guide and `install.sh`.
+> Work here with `git checkout dev`.
 
 **Just want to play?** See [PLAY.md](PLAY.md). To share your own build with
 friends, see [SHARING.md](SHARING.md). To host your own game server, see

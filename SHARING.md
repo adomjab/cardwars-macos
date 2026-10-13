@@ -7,6 +7,7 @@ follow [PLAY.md](PLAY.md) and never need Unity.
 
 ```
 cd ~/cardwars-macos
+git checkout dev
 git pull
 ./package.sh --server 35.229.126.223
 ```
@@ -32,7 +33,7 @@ It looks for the app in `CardWars/Builds/macOS/` first, then
 ## 3. Send your friends the link
 
 Send them the link to **PLAY.md**:
-https://github.com/adomjab/cardwars-macos/blob/main/PLAY.md
+https://github.com/adomjab/cardwars-macos
 
 ## Updating later
 
