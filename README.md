@@ -39,8 +39,8 @@ Rosetta 2. That works fine; you just need Rosetta installed.
    and the first build takes a while because Unity imports every asset under
    Rosetta.
    ```bash
-   git clone -b claude/cardwars-macos-compat-jeh7xi https://github.com/adomjab/aseprite-builder.git
-   cd aseprite-builder/cardwars-macos
+   git clone https://github.com/adomjab/cardwars-macos.git
+   cd cardwars-macos
    ./setup.sh
    ./build.sh
    open CardWars/Builds/macOS/CardWars.app

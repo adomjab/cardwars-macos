@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # One-line installer for Card Wars on macOS. Friends run:
-#   curl -fsSL https://raw.githubusercontent.com/adomjab/aseprite-builder/claude/cardwars-macos-compat-jeh7xi/cardwars-macos/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/main/install.sh | bash
 set -euo pipefail
 
-REPO="adomjab/aseprite-builder"
-TAG="${CARDWARS_TAG:-cardwars-macos}"
-URL="https://github.com/$REPO/releases/download/$TAG/CardWars-macOS.zip"
+REPO="adomjab/cardwars-macos"
+URL="https://github.com/$REPO/releases/latest/download/CardWars-macOS.zip"
 DEST="/Applications"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT

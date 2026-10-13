@@ -26,4 +26,4 @@ rm -f "$OUT"
 ditto -c -k --sequesterRsrc --keepParent "$APP" "$OUT"
 
 echo "Created: $OUT ($(du -h "$OUT" | cut -f1))"
-echo "Upload it to a GitHub Release with the tag 'cardwars-macos' (see SHARING.md)."
+echo "Upload it to a new GitHub Release (see SHARING.md)."

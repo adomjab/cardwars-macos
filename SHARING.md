@@ -6,7 +6,7 @@ follow [PLAY.md](PLAY.md) and never need Unity.
 ## 1. Package the app (on your Mac)
 
 ```
-cd ~/aseprite-builder/cardwars-macos
+cd ~/cardwars-macos
 git pull
 ./package.sh
 ```
@@ -18,10 +18,9 @@ It looks for the app in `CardWars/Builds/macOS/` first, then
 
 ## 2. Upload it as a GitHub Release
 
-1. Open https://github.com/adomjab/aseprite-builder/releases/new
-2. **Choose a tag**: type `cardwars-macos` and click **Create new tag**.
-   Use exactly this name, because the installer downloads from it.
-3. **Target**: select the branch `claude/cardwars-macos-compat-jeh7xi`.
+1. Open https://github.com/adomjab/cardwars-macos/releases/new
+2. **Choose a tag**: type a version such as `v1` and click **Create new tag**.
+3. **Target**: leave it on `main`.
 4. **Title**: e.g. `Card Wars for macOS`.
 5. Drag `CardWars-macOS.zip` into the **Attach binaries** box and wait for the
    upload to finish. Files up to 2 GB are fine.
@@ -30,12 +29,12 @@ It looks for the app in `CardWars/Builds/macOS/` first, then
 ## 3. Send your friends the link
 
 Send them the link to **PLAY.md**:
-https://github.com/adomjab/aseprite-builder/blob/claude/cardwars-macos-compat-jeh7xi/cardwars-macos/PLAY.md
+https://github.com/adomjab/cardwars-macos/blob/main/PLAY.md
 
 ## Updating later
 
-Rebuild, run `./package.sh` again, then edit the `cardwars-macos` release:
-delete the old zip and upload the new one. Friends get the update by running
+Rebuild, run `./package.sh` again, and publish a new release (e.g. `v2`)
+with the new zip. The installer always downloads the latest release. Friends get the update by running
 the install command again.
 
 ## Before you share

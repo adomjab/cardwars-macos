@@ -8,7 +8,7 @@ Works on any Mac: Apple Silicon (M1/M2/M3/M4) or Intel.
 2. Paste this line and press **Enter**:
 
    ```
-   curl -fsSL https://raw.githubusercontent.com/adomjab/aseprite-builder/claude/cardwars-macos-compat-jeh7xi/cardwars-macos/install.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/main/install.sh | bash
    ```
 
 3. If it asks for a password, type your Mac login password. Nothing shows on
@@ -21,7 +21,7 @@ or Spotlight like any other app.
 ## Install by hand
 
 1. Download **CardWars-macOS.zip** from the
-   [release page](https://github.com/adomjab/aseprite-builder/releases/tag/cardwars-macos).
+   [release page](https://github.com/adomjab/cardwars-macos/releases/latest).
 2. Double-click the zip, then drag **CardWars** into **Applications**.
 3. The first time, **right-click CardWars → Open → Open**. If macOS says it is
    "damaged" or "can't be opened", run this in Terminal:
