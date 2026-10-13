@@ -211,7 +211,7 @@ In the server's terminal (Google: the **SSH** button; Oracle: `ssh` from your
 Mac), paste:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/main/server/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/dev/server/install.sh | sudo bash
 ```
 
 It installs the server, starts it on port 80 and makes it start again

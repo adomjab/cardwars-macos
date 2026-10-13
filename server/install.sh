@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Install or update the Card Wars server on a Debian/Ubuntu machine.
 # Run on the server (e.g. in Google Cloud's SSH window):
-#   curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/main/server/install.sh | sudo bash
+#   curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/dev/server/install.sh | sudo bash
 # Re-running it updates the server program and keeps all accounts and saves.
 set -euo pipefail
 
-REPO_RAW="https://raw.githubusercontent.com/adomjab/cardwars-macos/main/server"
+REPO_RAW="https://raw.githubusercontent.com/adomjab/cardwars-macos/dev/server"
 APP_DIR=/opt/cardwars
 DATA_DIR=/var/lib/cardwars
 PORT="${CARDWARS_PORT:-80}"
