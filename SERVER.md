@@ -5,16 +5,96 @@ The game still runs on each player's Mac. The server only runs the Card Wars
 **server program** (accounts, saves, multiplayer), and every copy of the game
 connects to it.
 
-> **Status:** the Card Wars server program isn't written yet. Parts 1–4 set up
-> and test the server so it's ready; part 5 is where the program goes once it
-> exists.
+> **Status:** the Card Wars server program isn't written yet. The setup steps
+> below create and test the server so it's ready; "Install the Card Wars server
+> program" is where it goes once it exists.
 
-Time needed: about 30–45 minutes. You need a credit or debit card for
+Two free options are covered: **Google Cloud** (simpler, recommended) and
+**Oracle Cloud** (more free data, harder setup). Do one of them, then the two
+shared sections at the end.
+
+Time needed: about 20–30 minutes. You need a credit or debit card for
 verification. Within the free limits you aren't charged.
 
 ---
 
-## Part 1 – Create an Oracle Cloud account
+## Google Cloud setup
+
+### G1 – Create the account
+1. Go to https://console.cloud.google.com and sign in with a Google account.
+2. Click **Try for free** and finish the sign-up, including the card.
+   You get a $300 / 90-day trial; the free server described here is separate
+   and stays free after the trial (see G6).
+3. A project called **My First Project** is created for you. That's fine.
+
+### G2 – Create the free server
+1. In the search bar at the top, type **VM instances** and open it. If asked,
+   click **Enable** (Compute Engine API) and wait about a minute.
+2. Click **Create instance** and set:
+   - **Name:** `cardwars-server`
+   - **Region:** `us-central1` (Iowa), `us-west1` (Oregon) or `us-east1`
+     (South Carolina). **Only these three are free.** Any zone is fine.
+   - **Machine configuration:** series **E2**, machine type **e2-micro**
+     (under *Shared-core*).
+   - **OS and storage** → **Change**: operating system **Debian**, version
+     **Debian 12**, boot disk type **Standard persistent disk**, size **30** GB
+     → **Select**. The default "Balanced" disk is **not** free.
+   - **Networking → Firewall:** tick **Allow HTTP traffic**.
+3. Click **Create**. The cost estimate on the right may show a monthly price;
+   the free allowance is subtracted on the bill.
+4. When the green tick appears, copy the **External IP** from the list,
+   e.g. `34.123.45.67`. This is your server's address.
+
+### G3 – Open the server's terminal
+In the VM list, click **SSH** next to `cardwars-server`. A terminal window
+opens in your browser, already logged into the server. (Click **Authorize** if
+asked.)
+
+### G4 – Test it from another network
+In that SSH window, start a throwaway test web server:
+
+```
+mkdir -p ~/test && echo "Card Wars server is reachable!" > ~/test/index.html
+```
+```
+cd ~/test && sudo python3 -m http.server 80
+```
+
+On your **phone using mobile data with Wi-Fi off**, open
+`http://34.123.45.67` (your IP). If you see **"Card Wars server is
+reachable!"**, friends on any Wi-Fi will be able to reach your server.
+
+Press **Ctrl+C** to stop the test.
+
+If the page doesn't load:
+- Check that you used `http://`, not `https://`.
+- In the VM's **Edit** page, check that **Allow HTTP traffic** is ticked.
+
+### G5 – Add a $1 budget alert
+Search for **Budgets & alerts** → **Create budget** → amount **$1** → keep
+the email alerts on → **Finish**. If anything ever starts costing money, you
+get an email.
+
+### G6 – Keep it free and running
+- **When the 90-day trial ends**, Google stops your servers unless you
+  **upgrade** the account (a banner/button in the console). The e2-micro stays
+  free after upgrading; only things beyond the free limits are charged.
+- **Free limits:** 1 e2-micro in the three US regions, 30 GB standard disk,
+  and **1 GB of outgoing data per month**. Card Wars traffic is small, but with
+  several active players you could go a little over; extra data costs cents.
+- **Don't stop the VM** if you can avoid it: the external IP can change after
+  a stop/start, and then the game would need the new address. Rebooting is
+  fine.
+- **Don't add** bigger machines, extra disks, snapshots or other paid
+  services.
+
+---
+
+## Oracle Cloud setup (alternative)
+
+More free data (10 TB/month) and a region of your choice, but a harder setup.
+
+### O1 – Create an Oracle Cloud account
 
 1. Go to https://signup.cloud.oracle.com and sign up.
 2. **Home region:** pick one close to you, such as *Germany Central
@@ -24,7 +104,7 @@ verification. Within the free limits you aren't charged.
 4. Wait for the "account is ready" email (usually a few minutes, sometimes
    longer), then sign in at https://cloud.oracle.com.
 
-## Part 2 – Create the free server
+### O2 – Create the free server
 
 1. Open the menu ☰ → **Compute** → **Instances** → **Create instance**.
 2. **Name:** `cardwars-server`
@@ -47,13 +127,13 @@ verification. Within the free limits you aren't charged.
 7. Click **Create**. When the state turns green (**Running**), copy the
    **Public IP address**, e.g. `141.145.12.34`. This is your server's address.
 
-## Part 3 – Open port 80 (two firewalls)
+### O3 – Open port 80 (two firewalls)
 
 Port 80 is the standard web port, and the game connects to it. On Oracle you
 have to open it in **two** places. Missing the second one is the most common
 reason it "doesn't connect".
 
-### 3a. Oracle's firewall (Security List)
+#### O3a. Oracle's firewall (Security List)
 
 1. On your instance page, click the **subnet** link (under *Primary VNIC*).
 2. Open **Security** (or **Security Lists**) → **Default Security List for …**
@@ -63,7 +143,7 @@ reason it "doesn't connect".
    - **Destination Port Range:** `80`
 4. Click **Add Ingress Rules**.
 
-### 3b. The server's own firewall
+#### O3b. The server's own firewall
 
 First log in from your Mac's Terminal. Replace the file name and IP with yours:
 
@@ -84,7 +164,7 @@ sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
 sudo netfilter-persistent save
 ```
 
-## Part 4 – Test it from another network
+### O4 – Test it from another network
 
 Still logged into the server, start a throwaway test web server:
 
@@ -104,35 +184,10 @@ Press **Ctrl+C** in Terminal to stop the test. Type `exit` to log out.
 
 If the page doesn't load:
 - Check that you used `http://`, not `https://`.
-- Re-check the ingress rule in 3a (port 80, TCP, `0.0.0.0/0`).
-- Re-run the two commands in 3b.
+- Re-check the ingress rule in O3a (port 80, TCP, `0.0.0.0/0`).
+- Re-run the two commands in O3b.
 
-## Part 5 – Install the Card Wars server program
-
-*Not available yet.* When it's ready, this part will be a couple of commands
-that install it and keep it running on port 80, including after the server
-restarts.
-
-## Part 6 – Point the game at your server
-
-On your Mac, before packaging the game for friends:
-
-1. Edit `CardWars/Assets/StreamingAssets/server_settings.json` so it reads
-   (with your IP, keeping `http://` and the final `/`):
-   ```json
-   {
-       "type" : "server_settings",
-       "server_url" : "http://141.145.12.34/"
-   }
-   ```
-2. Rebuild with `./build.sh`, then `./package.sh`, and publish a new release
-   (see [SHARING.md](SHARING.md)).
-
-To change an already built app instead, edit
-`CardWars.app/Contents/Resources/Data/StreamingAssets/server_settings.json`
-and re-sign it with `codesign --force --deep --sign - CardWars.app`.
-
-## Part 7 – Keep it free and keep it alive
+### O5 – Keep it free and keep it alive
 
 - **Idle servers can be reclaimed.** Oracle may take back Always Free servers
   that stay mostly idle (under 20% CPU, network and memory use) for 7 days, and
@@ -150,20 +205,27 @@ and re-sign it with `codesign --force --deep --sign - CardWars.app`.
 
 ---
 
-## Alternative: Google Cloud (simpler, US-only)
+## Install the Card Wars server program
 
-If Oracle has no capacity or you'd rather keep it simple, Google's free
-`e2-micro` works too:
+*Not available yet.* When it's ready, this part will be a couple of commands
+that install it and keep it running on port 80, including after the server
+restarts.
 
-1. Sign up at https://console.cloud.google.com (the $300 trial; the free
-   e2-micro continues after it if you upgrade the account when the trial ends).
-2. **Compute Engine → VM instances → Create instance**:
-   - Region **us-central1**, **us-west1** or **us-east1** (only these are free).
-   - Machine type **e2-micro**.
-   - Boot disk: **Debian 12**, disk type **Standard persistent disk**, 30 GB.
-     The default "Balanced" disk is *not* free.
-   - Firewall: tick **Allow HTTP traffic**. That's the only firewall step
-     on Google.
-3. Copy the **External IP**, click **SSH** to open a terminal in your browser,
-   then do Part 4 (the test), skipping the `iptables` commands.
-4. Add a $1 budget alert under **Billing → Budgets & alerts**.
+## Point the game at your server
+
+On your Mac, before packaging the game for friends:
+
+1. Edit `CardWars/Assets/StreamingAssets/server_settings.json` so it reads
+   (with your IP, keeping `http://` and the final `/`):
+   ```json
+   {
+       "type" : "server_settings",
+       "server_url" : "http://141.145.12.34/"
+   }
+   ```
+2. Rebuild with `./build.sh`, then `./package.sh`, and publish a new release
+   (see [SHARING.md](SHARING.md)).
+
+To change an already built app instead, edit
+`CardWars.app/Contents/Resources/Data/StreamingAssets/server_settings.json`
+and re-sign it with `codesign --force --deep --sign - CardWars.app`.
