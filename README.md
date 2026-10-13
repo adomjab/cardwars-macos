@@ -2,7 +2,7 @@
 
 **Just want to play?** See [PLAY.md](PLAY.md). To share your own build with
 friends, see [SHARING.md](SHARING.md). To host your own game server, see
-[SERVER.md](SERVER.md).
+[SERVER.md](SERVER.md) (the server program itself is in [`server/`](server/)).
 
 A patch for [shishkabob27/CardWars](https://github.com/shishkabob27/CardWars)
 (Unity 2017.4.40f1) that lets you build and run it as a native macOS `.app`.

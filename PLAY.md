@@ -30,6 +30,17 @@ or Spotlight like any other app.
    ```
 4. On an M-series Mac, click **Install** if macOS asks to install Rosetta.
 
+## Logging in
+
+At the login screen, enter a username and password. If the name is new, the
+game offers to create an account, which keeps your progress on the server and
+lets you play multiplayer. Use a password you don't use anywhere else: the game
+sends it without encryption.
+
+Already playing as a guest? Quit the game, run
+`defaults delete "unity.shishkabob.Card Wars"` in Terminal, and start it again
+to get the login screen. Your progress is kept and moves into the new account.
+
 ## Good to know
 
 - If the game says **"Server did not respond. Retry?"**, choose **No** to play

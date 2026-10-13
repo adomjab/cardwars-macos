@@ -5,9 +5,9 @@ The game still runs on each player's Mac. The server only runs the Card Wars
 **server program** (accounts, saves, multiplayer), and every copy of the game
 connects to it.
 
-> **Status:** the Card Wars server program isn't written yet. The setup steps
-> below create and test the server so it's ready; "Install the Card Wars server
-> program" is where it goes once it exists.
+> **Status:** the server program is new and tested against the game's code,
+> but not yet against the real game. Expect a round or two of fixes the first
+> time you play on it.
 
 Two free options are covered: **Google Cloud** (simpler, recommended) and
 **Oracle Cloud** (more free data, harder setup). Do one of them, then the two
@@ -207,9 +207,33 @@ If the page doesn't load:
 
 ## Install the Card Wars server program
 
-*Not available yet.* When it's ready, this part will be a couple of commands
-that install it and keep it running on port 80, including after the server
-restarts.
+In the server's terminal (Google: the **SSH** button; Oracle: `ssh` from your
+Mac), paste:
+
+```
+curl -fsSL https://raw.githubusercontent.com/adomjab/cardwars-macos/main/server/install.sh | sudo bash
+```
+
+It installs the server, starts it on port 80 and makes it start again
+automatically after a reboot. When it finishes it prints
+**"Card Wars server is running!"** and, on Google Cloud, the address to use.
+
+Check it from your phone (Wi-Fi off): `http://YOUR-IP/` should show
+**"Card Wars server is running."**
+
+Useful commands on the server:
+
+| What | Command |
+| --- | --- |
+| Is it running? | `sudo systemctl status cardwars` |
+| Watch live activity | `sudo journalctl -u cardwars -f` (Ctrl+C to stop) |
+| Restart it | `sudo systemctl restart cardwars` |
+| Update to the newest version | run the install command again |
+| Back up all accounts and saves | `sudo cp /var/lib/cardwars/cardwars.db ~/cardwars-backup.db` |
+
+What it does: accounts, cloud saves, multiplayer (you fight other players'
+saved decks), leaderboards and weekly tournaments (ending Monday 00:00 UTC).
+In-app purchases are switched off.
 
 ## Point the game at your server
 
@@ -229,3 +253,20 @@ On your Mac, before packaging the game for friends:
 To change an already built app instead, edit
 `CardWars.app/Contents/Resources/Data/StreamingAssets/server_settings.json`
 and re-sign it with `codesign --force --deep --sign - CardWars.app`.
+
+## Logging in (each player)
+
+- **New players:** at the login screen, type a username (3–24 letters,
+  numbers, `.`, `-` or `_`) and a password. If the name is free, the game
+  offers to create the account.
+- **Players who were playing as a guest:** the login screen only shows the
+  first time. To get it back, quit the game and run this in Terminal (it
+  resets the game's settings, **not** your progress):
+  ```
+  defaults delete "unity.shishkabob.Card Wars"
+  ```
+  Then start the game and log in. Your guest progress is copied into the new
+  account. (Back up your save first, just in case:
+  `cp -R ~/Library/Application\ Support/shishkabob/Card\ Wars ~/Desktop/CardWars-save-backup`)
+- Use a password you don't use anywhere else: the game sends it without
+  encryption (plain `http://`).

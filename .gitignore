@@ -1,2 +1,5 @@
 CardWars/
 *.zip
+__pycache__/
+*.db
+*.db-*
