@@ -29,8 +29,20 @@ if [ -d "$DEST/CardWars.app" ]; then
 fi
 mv "$TMP/CardWars.app" "$DEST/" 2>/dev/null || sudo mv "$TMP/CardWars.app" "$DEST/"
 
-# The app isn't notarized by Apple; clear the download flag so macOS opens it.
+# Event schedules that repeat every year (the game's own ended in 2025).
+echo "==> Adding this year's events..."
+BLUEPRINTS="$DEST/CardWars.app/Contents/Resources/Data/StreamingAssets/Blueprints"
+for f in db_Schedule.json db_GachaSchedule.json; do
+  curl -fsSL -o "$TMP/$f" "https://raw.githubusercontent.com/$REPO/main/events/$f"
+  cp "$TMP/$f" "$BLUEPRINTS/$f" 2>/dev/null || sudo cp "$TMP/$f" "$BLUEPRINTS/$f"
+  # A copy downloaded by the old server's content updates would win; remove it.
+  rm -f "$HOME/Library/Application Support/shishkabob/Card Wars/Contents/Blueprints/$f"
+done
+
+# The app isn't notarized by Apple; clear the download flag so macOS opens it,
+# and re-sign it after the change above.
 xattr -cr "$DEST/CardWars.app" 2>/dev/null || sudo xattr -cr "$DEST/CardWars.app"
+codesign --force --deep --sign - "$DEST/CardWars.app" 2>/dev/null || sudo codesign --force --deep --sign - "$DEST/CardWars.app"
 
 echo "==> Done! Card Wars is in your Applications folder."
 open "$DEST/CardWars.app"

@@ -1,0 +1,1682 @@
+[
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2023",
+		"endDate": "31/10/2023"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2023",
+		"endDate": "31/10/2023"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2023",
+		"endDate": "31/12/2023"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2023",
+		"endDate": "31/12/2023"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2023",
+		"endDate": "01/02/2023"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2023",
+		"endDate": "01/03/2023"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2023",
+		"endDate": "01/04/2023"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2023",
+		"endDate": "01/05/2023"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2023",
+		"endDate": "01/06/2023"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2023",
+		"endDate": "01/07/2023"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2023",
+		"endDate": "01/08/2023"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2023",
+		"endDate": "01/09/2023"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2023",
+		"endDate": "01/10/2023"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2023",
+		"endDate": "01/11/2023"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2023",
+		"endDate": "01/12/2023"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2023",
+		"endDate": "01/01/2024"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2024",
+		"endDate": "31/10/2024"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2024",
+		"endDate": "31/10/2024"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2024",
+		"endDate": "31/12/2024"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2024",
+		"endDate": "31/12/2024"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2024",
+		"endDate": "01/02/2024"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2024",
+		"endDate": "01/03/2024"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2024",
+		"endDate": "01/04/2024"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2024",
+		"endDate": "01/05/2024"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2024",
+		"endDate": "01/06/2024"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2024",
+		"endDate": "01/07/2024"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2024",
+		"endDate": "01/08/2024"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2024",
+		"endDate": "01/09/2024"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2024",
+		"endDate": "01/10/2024"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2024",
+		"endDate": "01/11/2024"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2024",
+		"endDate": "01/12/2024"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2024",
+		"endDate": "01/01/2025"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2025",
+		"endDate": "31/10/2025"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2025",
+		"endDate": "31/10/2025"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2025",
+		"endDate": "31/12/2025"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2025",
+		"endDate": "31/12/2025"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2025",
+		"endDate": "01/02/2025"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2025",
+		"endDate": "01/03/2025"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2025",
+		"endDate": "01/04/2025"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2025",
+		"endDate": "01/05/2025"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2025",
+		"endDate": "01/06/2025"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2025",
+		"endDate": "01/07/2025"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2025",
+		"endDate": "01/08/2025"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2025",
+		"endDate": "01/09/2025"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2025",
+		"endDate": "01/10/2025"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2025",
+		"endDate": "01/11/2025"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2025",
+		"endDate": "01/12/2025"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2025",
+		"endDate": "01/01/2026"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2026",
+		"endDate": "31/10/2026"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2026",
+		"endDate": "31/10/2026"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2026",
+		"endDate": "31/12/2026"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2026",
+		"endDate": "31/12/2026"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2026",
+		"endDate": "01/02/2026"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2026",
+		"endDate": "01/03/2026"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2026",
+		"endDate": "01/04/2026"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2026",
+		"endDate": "01/05/2026"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2026",
+		"endDate": "01/06/2026"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2026",
+		"endDate": "01/07/2026"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2026",
+		"endDate": "01/08/2026"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2026",
+		"endDate": "01/09/2026"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2026",
+		"endDate": "01/10/2026"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2026",
+		"endDate": "01/11/2026"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2026",
+		"endDate": "01/12/2026"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2026",
+		"endDate": "01/01/2027"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2027",
+		"endDate": "31/10/2027"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2027",
+		"endDate": "31/10/2027"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2027",
+		"endDate": "31/12/2027"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2027",
+		"endDate": "31/12/2027"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2027",
+		"endDate": "01/02/2027"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2027",
+		"endDate": "01/03/2027"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2027",
+		"endDate": "01/04/2027"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2027",
+		"endDate": "01/05/2027"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2027",
+		"endDate": "01/06/2027"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2027",
+		"endDate": "01/07/2027"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2027",
+		"endDate": "01/08/2027"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2027",
+		"endDate": "01/09/2027"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2027",
+		"endDate": "01/10/2027"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2027",
+		"endDate": "01/11/2027"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2027",
+		"endDate": "01/12/2027"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2027",
+		"endDate": "01/01/2028"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2028",
+		"endDate": "31/10/2028"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2028",
+		"endDate": "31/10/2028"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2028",
+		"endDate": "31/12/2028"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2028",
+		"endDate": "31/12/2028"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2028",
+		"endDate": "01/02/2028"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2028",
+		"endDate": "01/03/2028"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2028",
+		"endDate": "01/04/2028"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2028",
+		"endDate": "01/05/2028"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2028",
+		"endDate": "01/06/2028"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2028",
+		"endDate": "01/07/2028"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2028",
+		"endDate": "01/08/2028"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2028",
+		"endDate": "01/09/2028"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2028",
+		"endDate": "01/10/2028"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2028",
+		"endDate": "01/11/2028"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2028",
+		"endDate": "01/12/2028"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2028",
+		"endDate": "01/01/2029"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2029",
+		"endDate": "31/10/2029"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2029",
+		"endDate": "31/10/2029"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2029",
+		"endDate": "31/12/2029"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2029",
+		"endDate": "31/12/2029"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2029",
+		"endDate": "01/02/2029"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2029",
+		"endDate": "01/03/2029"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2029",
+		"endDate": "01/04/2029"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2029",
+		"endDate": "01/05/2029"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2029",
+		"endDate": "01/06/2029"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2029",
+		"endDate": "01/07/2029"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2029",
+		"endDate": "01/08/2029"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2029",
+		"endDate": "01/09/2029"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2029",
+		"endDate": "01/10/2029"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2029",
+		"endDate": "01/11/2029"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2029",
+		"endDate": "01/12/2029"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2029",
+		"endDate": "01/01/2030"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2030",
+		"endDate": "31/10/2030"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2030",
+		"endDate": "31/10/2030"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2030",
+		"endDate": "31/12/2030"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2030",
+		"endDate": "31/12/2030"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2030",
+		"endDate": "01/02/2030"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2030",
+		"endDate": "01/03/2030"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2030",
+		"endDate": "01/04/2030"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2030",
+		"endDate": "01/05/2030"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2030",
+		"endDate": "01/06/2030"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2030",
+		"endDate": "01/07/2030"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2030",
+		"endDate": "01/08/2030"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2030",
+		"endDate": "01/09/2030"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2030",
+		"endDate": "01/10/2030"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2030",
+		"endDate": "01/11/2030"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2030",
+		"endDate": "01/12/2030"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2030",
+		"endDate": "01/01/2031"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2031",
+		"endDate": "31/10/2031"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2031",
+		"endDate": "31/10/2031"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2031",
+		"endDate": "31/12/2031"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2031",
+		"endDate": "31/12/2031"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2031",
+		"endDate": "01/02/2031"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2031",
+		"endDate": "01/03/2031"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2031",
+		"endDate": "01/04/2031"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2031",
+		"endDate": "01/05/2031"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2031",
+		"endDate": "01/06/2031"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2031",
+		"endDate": "01/07/2031"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2031",
+		"endDate": "01/08/2031"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2031",
+		"endDate": "01/09/2031"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2031",
+		"endDate": "01/10/2031"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2031",
+		"endDate": "01/11/2031"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2031",
+		"endDate": "01/12/2031"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2031",
+		"endDate": "01/01/2032"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2032",
+		"endDate": "31/10/2032"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2032",
+		"endDate": "31/10/2032"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2032",
+		"endDate": "31/12/2032"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2032",
+		"endDate": "31/12/2032"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2032",
+		"endDate": "01/02/2032"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2032",
+		"endDate": "01/03/2032"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2032",
+		"endDate": "01/04/2032"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2032",
+		"endDate": "01/05/2032"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2032",
+		"endDate": "01/06/2032"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2032",
+		"endDate": "01/07/2032"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2032",
+		"endDate": "01/08/2032"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2032",
+		"endDate": "01/09/2032"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2032",
+		"endDate": "01/10/2032"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2032",
+		"endDate": "01/11/2032"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2032",
+		"endDate": "01/12/2032"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2032",
+		"endDate": "01/01/2033"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2033",
+		"endDate": "31/10/2033"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2033",
+		"endDate": "31/10/2033"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2033",
+		"endDate": "31/12/2033"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2033",
+		"endDate": "31/12/2033"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2033",
+		"endDate": "01/02/2033"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2033",
+		"endDate": "01/03/2033"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2033",
+		"endDate": "01/04/2033"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2033",
+		"endDate": "01/05/2033"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2033",
+		"endDate": "01/06/2033"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2033",
+		"endDate": "01/07/2033"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2033",
+		"endDate": "01/08/2033"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2033",
+		"endDate": "01/09/2033"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2033",
+		"endDate": "01/10/2033"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2033",
+		"endDate": "01/11/2033"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2033",
+		"endDate": "01/12/2033"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2033",
+		"endDate": "01/01/2034"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2034",
+		"endDate": "31/10/2034"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2034",
+		"endDate": "31/10/2034"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2034",
+		"endDate": "31/12/2034"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2034",
+		"endDate": "31/12/2034"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2034",
+		"endDate": "01/02/2034"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2034",
+		"endDate": "01/03/2034"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2034",
+		"endDate": "01/04/2034"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2034",
+		"endDate": "01/05/2034"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2034",
+		"endDate": "01/06/2034"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2034",
+		"endDate": "01/07/2034"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2034",
+		"endDate": "01/08/2034"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2034",
+		"endDate": "01/09/2034"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2034",
+		"endDate": "01/10/2034"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2034",
+		"endDate": "01/11/2034"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2034",
+		"endDate": "01/12/2034"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2034",
+		"endDate": "01/01/2035"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2035",
+		"endDate": "31/10/2035"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2035",
+		"endDate": "31/10/2035"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2035",
+		"endDate": "31/12/2035"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2035",
+		"endDate": "31/12/2035"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2035",
+		"endDate": "01/02/2035"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2035",
+		"endDate": "01/03/2035"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2035",
+		"endDate": "01/04/2035"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2035",
+		"endDate": "01/05/2035"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2035",
+		"endDate": "01/06/2035"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2035",
+		"endDate": "01/07/2035"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2035",
+		"endDate": "01/08/2035"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2035",
+		"endDate": "01/09/2035"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2035",
+		"endDate": "01/10/2035"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2035",
+		"endDate": "01/11/2035"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2035",
+		"endDate": "01/12/2035"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2035",
+		"endDate": "01/01/2036"
+	},
+	{
+		"item": "Halloween",
+		"category": "battle_level",
+		"startDate": "01/10/2036",
+		"endDate": "31/10/2036"
+	},
+	{
+		"item": "Halloween_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Halloween_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentHalloween",
+		"category": "menu_environment",
+		"startDate": "01/10/2036",
+		"endDate": "31/10/2036"
+	},
+	{
+		"item": "Christmas",
+		"category": "battle_level",
+		"startDate": "01/12/2036",
+		"endDate": "31/12/2036"
+	},
+	{
+		"item": "Christmas_Table",
+		"category": "battle_table",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "Christmas_Chair",
+		"category": "battle_chair",
+		"startDate": "",
+		"endDate": ""
+	},
+	{
+		"item": "AdventureTimeEnvironmentChristmas",
+		"category": "menu_environment",
+		"startDate": "01/12/2036",
+		"endDate": "31/12/2036"
+	},
+	{
+		"item": "January",
+		"category": "calendar_gift",
+		"startDate": "01/01/2036",
+		"endDate": "01/02/2036"
+	},
+	{
+		"item": "February",
+		"category": "calendar_gift",
+		"startDate": "01/02/2036",
+		"endDate": "01/03/2036"
+	},
+	{
+		"item": "March",
+		"category": "calendar_gift",
+		"startDate": "01/03/2036",
+		"endDate": "01/04/2036"
+	},
+	{
+		"item": "April",
+		"category": "calendar_gift",
+		"startDate": "01/04/2036",
+		"endDate": "01/05/2036"
+	},
+	{
+		"item": "May",
+		"category": "calendar_gift",
+		"startDate": "01/05/2036",
+		"endDate": "01/06/2036"
+	},
+	{
+		"item": "June",
+		"category": "calendar_gift",
+		"startDate": "01/06/2036",
+		"endDate": "01/07/2036"
+	},
+	{
+		"item": "July",
+		"category": "calendar_gift",
+		"startDate": "01/07/2036",
+		"endDate": "01/08/2036"
+	},
+	{
+		"item": "August",
+		"category": "calendar_gift",
+		"startDate": "01/08/2036",
+		"endDate": "01/09/2036"
+	},
+	{
+		"item": "September",
+		"category": "calendar_gift",
+		"startDate": "01/09/2036",
+		"endDate": "01/10/2036"
+	},
+	{
+		"item": "Halloween",
+		"category": "calendar_gift",
+		"startDate": "01/10/2036",
+		"endDate": "01/11/2036"
+	},
+	{
+		"item": "November",
+		"category": "calendar_gift",
+		"startDate": "01/11/2036",
+		"endDate": "01/12/2036"
+	},
+	{
+		"item": "Christmas",
+		"category": "calendar_gift",
+		"startDate": "01/12/2036",
+		"endDate": "01/01/2037"
+	}
+]

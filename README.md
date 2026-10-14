@@ -83,6 +83,10 @@ into the new account.
   - Mac: `~/Library/Application Support/shishkabob/Card Wars/`
   - Windows: `%USERPROFILE%\AppData\LocalLow\shishkabob\Card Wars\`
 - To update, run the install command again.
+- **Events** (Halloween and Christmas battles and themes, monthly login
+  calendar, special card packs) repeat every year. The installers add the
+  event schedules from the [`events`](events/) folder; if you installed before
+  they were added, run the install command again to get them.
 
 ## Credits
 
