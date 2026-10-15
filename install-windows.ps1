@@ -11,7 +11,7 @@ $ProgressPreference = 'SilentlyContinue'   # the progress bar makes downloads ve
 
 $Server  = 'http://35.229.126.223/'
 $ZipUrl  = 'https://github.com/shishkabob27/CardWars/releases/latest/download/CardWars-Windows.zip'
-$EventsUrl = 'https://raw.githubusercontent.com/adomjab/cardwars-macos/main/events'
+$DataUrl = 'https://raw.githubusercontent.com/adomjab/cardwars-macos/main/gamedata'
 $Dest    = if ($env:CARDWARS_INSTALL_DIR) { $env:CARDWARS_INSTALL_DIR } else { Join-Path $env:LOCALAPPDATA 'CardWars' }
 $GameDir = Join-Path $Dest 'game'
 $Work    = Join-Path ([IO.Path]::GetTempPath()) ('cardwars-' + [Guid]::NewGuid().ToString('N'))
@@ -66,15 +66,16 @@ try {
         if (Test-Path $override) { Set-ServerSettings $override }
     }
 
-    # Event schedules that repeat every year (the game's own ended in 2025).
-    Write-Step "Adding this year's events..."
+    # Shared game data: yearly event schedules (the game's own ended in 2025)
+    # and the gem prices, so Mac and Windows players get the same.
+    Write-Step 'Adding events and gem prices...'
     $blueprints = Join-Path $GameDir 'CardWars_Data\StreamingAssets\Blueprints'
-    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json') {
+    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json', 'db_IAP.json') {
         $target = Join-Path $blueprints $f
-        if ($env:CARDWARS_EVENTS_DIR) {
-            Copy-Item (Join-Path $env:CARDWARS_EVENTS_DIR $f) $target -Force
+        if ($env:CARDWARS_DATA_DIR) {
+            Copy-Item (Join-Path $env:CARDWARS_DATA_DIR $f) $target -Force
         } else {
-            Invoke-WebRequest -Uri "$EventsUrl/$f" -OutFile $target -UseBasicParsing
+            Invoke-WebRequest -Uri "$DataUrl/$f" -OutFile $target -UseBasicParsing
         }
         # A copy downloaded by the old server's content updates would win; remove it.
         if ($env:USERPROFILE) {
