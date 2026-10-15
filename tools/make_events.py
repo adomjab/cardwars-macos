@@ -9,7 +9,8 @@ year up to LAST_YEAR:
 - db_Schedule.json: Halloween (October) and Christmas (December) battle
   levels and menu themes, and the monthly calendar gifts.
 - db_GachaSchedule.json: the special card-pack "carnivals", using the 2024
-  calendar (the last complete year) shifted to each later year.
+  calendar (the last complete year) shifted to each later year, with every
+  carnival using its own odds (a few original rows mixed them up).
 
 Usage: python3 tools/make_events.py OUTPUT_DIR
 Reads the untouched originals from tools/original/.
@@ -63,12 +64,32 @@ def shift_year(date_text, years):
     return re.sub(r"^(\d{4})", lambda m: str(int(m.group(1)) + years), date_text)
 
 
+# Each carnival's banner (Party) and the odds it should use (Weight1).
+PARTY_WEIGHTS = {
+    "party_plains": "PlainsCarnival", "party_leader": "LeaderCarnival", "party_cotton": "CottonCarnival",
+    "party_swamp": "SwampCarnival", "party_rare": "RareCarnival", "party_sand": "SandCarnival",
+    "party_corn": "CornCarnival", "party_gold": "GoldCarnival", "party_halloween": "HalloweenCarnival",
+    "party_obsidian": "ObsidianCarnival", "party_holiday": "HolidayCarnival",
+}
+
+
+def match_odds(row):
+    """Some original rows show one carnival's banner but use another's odds
+    (e.g. "Rare Card Carnival" with Sandy Beach odds). Use the banner's odds."""
+    row = dict(row)
+    if row.get("Party") in PARTY_WEIGHTS:
+        row["Weight1"] = PARTY_WEIGHTS[row["Party"]]
+    return row
+
+
 def make_gacha():
     with open(os.path.join(HERE, "original", "db_GachaSchedule.json"), encoding="utf-8") as f:
         original = json.load(f)
     defaults = [r for r in original if r["StartDate"].lower() == "default"]
     dated = [r for r in original if r["StartDate"].lower() != "default"]
     template = [r for r in dated if r["StartDate"].startswith(str(GACHA_TEMPLATE_YEAR))]
+    dated = [match_odds(r) for r in dated]
+    template = [match_odds(r) for r in template]
     rows = list(defaults) + dated
     for year in range(GACHA_TEMPLATE_YEAR + 1, LAST_YEAR + 1):
         for r in template:
