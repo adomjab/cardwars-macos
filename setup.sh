@@ -16,10 +16,20 @@ git checkout "$COMMIT" 2>/dev/null || {
   echo "Pinned commit not found, using the current upstream HEAD instead." >&2
 }
 
-if git apply --reverse --check "$HERE/cardwars-macos.patch" 2>/dev/null; then
+PATCH="$HERE/cardwars-macos.patch"
+if git apply --reverse --check "$PATCH" 2>/dev/null; then
   echo "macOS patch already applied."
+elif git apply --check "$PATCH" 2>/dev/null; then
+  git apply --whitespace=nowarn "$PATCH"
+  echo "macOS patch applied."
 else
-  git apply --whitespace=nowarn "$HERE/cardwars-macos.patch"
+  # An older version of the patch is applied. Put the game's files back to the
+  # original (Unity's Library cache and Builds/ are ignored by git, so they're
+  # kept) and apply the current patch.
+  echo "Updating to the current macOS patch..."
+  git checkout -- .
+  git clean -fdq
+  git apply --whitespace=nowarn "$PATCH"
   echo "macOS patch applied."
 fi
 echo "Project ready at: $(pwd)"
