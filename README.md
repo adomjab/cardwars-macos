@@ -21,6 +21,7 @@ A patch for [shishkabob27/CardWars](https://github.com/shishkabob27/CardWars)
 | `Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs` | `Application.dataPath + Path.PathSeparator + name` → `Path.Combine(...)` | `PathSeparator` is `:` on macOS (`;` on Windows), so the path was wrong |
 | `Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs` | Falls back to the `_0`-renamed clip when a target doesn't have the requested one | Restores the camera fly-in/out when opening chests: the chest's and camera's clips shared a name and one was renamed when the project was recovered |
 | `Assets/StreamingAssets/Blueprints/db_Leaders.json` | `Leader_Gunter_FC` uses character `Gunter` instead of the non-existent `Gunter02` | Fionna & Cake level 24 (quest 5039) crashed / went black after its cutscene |
+| 56 prefabs and scenes (via `tools/fix_default_animations.py`) | Restores the default clip on 73 auto-playing Animation components that only have one clip | Recovering the project dropped these defaults, so nothing played: the chest "Nice/Rare/Very Rare/Algebraic Rare Card!" banners, "You Win/You Lose", hit/crit and spell effects, tombstones, animated scenery and menu idles |
 | `Assets/Editor/MacBuild.cs` (new) | Adds a **Card Wars > Build macOS** menu item and a batch-mode build method | A one-step macOS build |
 
 The rest of the game code was already cross-platform. It has no native plugins,

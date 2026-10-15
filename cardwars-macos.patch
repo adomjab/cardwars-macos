@@ -61,6 +61,720 @@ index 00000000..e10be0ad
 +		return null;
 +	}
 +}
+diff --git a/Assets/PrefabInstance/FX_BattleFXCrit.prefab b/Assets/PrefabInstance/FX_BattleFXCrit.prefab
+index cb44fc94..d46b4143 100644
+--- a/Assets/PrefabInstance/FX_BattleFXCrit.prefab
++++ b/Assets/PrefabInstance/FX_BattleFXCrit.prefab
+@@ -680,7 +680,7 @@ Animation:
+   m_GameObject: {fileID: 1119966454364165}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/FX_BattleFXHit.prefab b/Assets/PrefabInstance/FX_BattleFXHit.prefab
+index dd1faa6f..925111dc 100644
+--- a/Assets/PrefabInstance/FX_BattleFXHit.prefab
++++ b/Assets/PrefabInstance/FX_BattleFXHit.prefab
+@@ -647,7 +647,7 @@ Animation:
+   m_GameObject: {fileID: 1100104357777771}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/Rarity_1_NewCard.prefab b/Assets/PrefabInstance/Rarity_1_NewCard.prefab
+index 4709a241..6d57863f 100644
+--- a/Assets/PrefabInstance/Rarity_1_NewCard.prefab
++++ b/Assets/PrefabInstance/Rarity_1_NewCard.prefab
+@@ -116,7 +116,7 @@ Animation:
+   m_GameObject: {fileID: 1693306026019652}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 6e44cdcc78f8c5b45816a54ed025538e, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 6e44cdcc78f8c5b45816a54ed025538e, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/Rarity_2_NiceCard.prefab b/Assets/PrefabInstance/Rarity_2_NiceCard.prefab
+index ecd9d50c..fe51b2af 100644
+--- a/Assets/PrefabInstance/Rarity_2_NiceCard.prefab
++++ b/Assets/PrefabInstance/Rarity_2_NiceCard.prefab
+@@ -113,7 +113,7 @@ Animation:
+   m_GameObject: {fileID: 1483805661406846}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c5010902dc800c84595afd1f951d8bc8, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c5010902dc800c84595afd1f951d8bc8, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/Rarity_3_RareCard.prefab b/Assets/PrefabInstance/Rarity_3_RareCard.prefab
+index f4e48e31..6e38d61c 100644
+--- a/Assets/PrefabInstance/Rarity_3_RareCard.prefab
++++ b/Assets/PrefabInstance/Rarity_3_RareCard.prefab
+@@ -120,7 +120,7 @@ Animation:
+   m_GameObject: {fileID: 1682846089736384}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bfe84d23aea2a194f90e50911e352c67, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bfe84d23aea2a194f90e50911e352c67, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/Rarity_4_VeryRareCard.prefab b/Assets/PrefabInstance/Rarity_4_VeryRareCard.prefab
+index 6138d242..aee85748 100644
+--- a/Assets/PrefabInstance/Rarity_4_VeryRareCard.prefab
++++ b/Assets/PrefabInstance/Rarity_4_VeryRareCard.prefab
+@@ -120,7 +120,7 @@ Animation:
+   m_GameObject: {fileID: 1771885459367429}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: fd6736b8f8bf6d748b2b908f9250538d, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: fd6736b8f8bf6d748b2b908f9250538d, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/Rarity_5_AlgebraicRareCard.prefab b/Assets/PrefabInstance/Rarity_5_AlgebraicRareCard.prefab
+index 56f815a0..fd1cc547 100644
+--- a/Assets/PrefabInstance/Rarity_5_AlgebraicRareCard.prefab
++++ b/Assets/PrefabInstance/Rarity_5_AlgebraicRareCard.prefab
+@@ -118,7 +118,7 @@ Animation:
+   m_GameObject: {fileID: 1780959795415536}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 207b4aa5f2a6dcb40be444c8fadf13f3, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 207b4aa5f2a6dcb40be444c8fadf13f3, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Banner_BattleYouLose.prefab b/Assets/PrefabInstance/low_Banner_BattleYouLose.prefab
+index 06a2bd69..2cf44453 100644
+--- a/Assets/PrefabInstance/low_Banner_BattleYouLose.prefab
++++ b/Assets/PrefabInstance/low_Banner_BattleYouLose.prefab
+@@ -190,7 +190,7 @@ Animation:
+   m_GameObject: {fileID: 1350644595770354}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: e0207b23e7620904fb4b8133cdd2875b, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: e0207b23e7620904fb4b8133cdd2875b, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Banner_BattleYouWin.prefab b/Assets/PrefabInstance/low_Banner_BattleYouWin.prefab
+index 26504589..d720a34e 100644
+--- a/Assets/PrefabInstance/low_Banner_BattleYouWin.prefab
++++ b/Assets/PrefabInstance/low_Banner_BattleYouWin.prefab
+@@ -154,7 +154,7 @@ Animation:
+   m_GameObject: {fileID: 1633217770882764}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 4f4e635ffa9500447962423e02d21702, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 4f4e635ffa9500447962423e02d21702, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_FX_BattleFXCrit.prefab b/Assets/PrefabInstance/low_FX_BattleFXCrit.prefab
+index ec3b1708..ea93e278 100644
+--- a/Assets/PrefabInstance/low_FX_BattleFXCrit.prefab
++++ b/Assets/PrefabInstance/low_FX_BattleFXCrit.prefab
+@@ -514,7 +514,7 @@ Animation:
+   m_GameObject: {fileID: 1911284301984938}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_FX_BattleFXHit.prefab b/Assets/PrefabInstance/low_FX_BattleFXHit.prefab
+index f71cf157..ee45e763 100644
+--- a/Assets/PrefabInstance/low_FX_BattleFXHit.prefab
++++ b/Assets/PrefabInstance/low_FX_BattleFXHit.prefab
+@@ -380,7 +380,7 @@ Animation:
+   m_GameObject: {fileID: 1620952358650396}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bf72ec9e642a4ec42a5a91d9335c110a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Rarity_1_NewCard.prefab b/Assets/PrefabInstance/low_Rarity_1_NewCard.prefab
+index ffab9241..dd97be01 100644
+--- a/Assets/PrefabInstance/low_Rarity_1_NewCard.prefab
++++ b/Assets/PrefabInstance/low_Rarity_1_NewCard.prefab
+@@ -116,7 +116,7 @@ Animation:
+   m_GameObject: {fileID: 1329418243324279}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 6e44cdcc78f8c5b45816a54ed025538e, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 6e44cdcc78f8c5b45816a54ed025538e, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Rarity_2_NiceCard.prefab b/Assets/PrefabInstance/low_Rarity_2_NiceCard.prefab
+index 2ee24057..ca24668d 100644
+--- a/Assets/PrefabInstance/low_Rarity_2_NiceCard.prefab
++++ b/Assets/PrefabInstance/low_Rarity_2_NiceCard.prefab
+@@ -113,7 +113,7 @@ Animation:
+   m_GameObject: {fileID: 1382132953990382}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c5010902dc800c84595afd1f951d8bc8, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c5010902dc800c84595afd1f951d8bc8, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Rarity_3_RareCard.prefab b/Assets/PrefabInstance/low_Rarity_3_RareCard.prefab
+index 3657a12a..b0d263c2 100644
+--- a/Assets/PrefabInstance/low_Rarity_3_RareCard.prefab
++++ b/Assets/PrefabInstance/low_Rarity_3_RareCard.prefab
+@@ -120,7 +120,7 @@ Animation:
+   m_GameObject: {fileID: 1218235755170342}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: bfe84d23aea2a194f90e50911e352c67, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: bfe84d23aea2a194f90e50911e352c67, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Rarity_4_VeryRareCard.prefab b/Assets/PrefabInstance/low_Rarity_4_VeryRareCard.prefab
+index 2cf62bf4..a6948890 100644
+--- a/Assets/PrefabInstance/low_Rarity_4_VeryRareCard.prefab
++++ b/Assets/PrefabInstance/low_Rarity_4_VeryRareCard.prefab
+@@ -120,7 +120,7 @@ Animation:
+   m_GameObject: {fileID: 1635006640816645}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: fd6736b8f8bf6d748b2b908f9250538d, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: fd6736b8f8bf6d748b2b908f9250538d, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/PrefabInstance/low_Rarity_5_AlgebraicRareCard.prefab b/Assets/PrefabInstance/low_Rarity_5_AlgebraicRareCard.prefab
+index f74b1dd4..1e934c28 100644
+--- a/Assets/PrefabInstance/low_Rarity_5_AlgebraicRareCard.prefab
++++ b/Assets/PrefabInstance/low_Rarity_5_AlgebraicRareCard.prefab
+@@ -118,7 +118,7 @@ Animation:
+   m_GameObject: {fileID: 1965107659109283}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 207b4aa5f2a6dcb40be444c8fadf13f3, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 207b4aa5f2a6dcb40be444c8fadf13f3, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/SLOTGame.prefab b/Assets/Resources/SLOTGame.prefab
+index 67349532..9d8ccbcb 100644
+--- a/Assets/Resources/SLOTGame.prefab
++++ b/Assets/Resources/SLOTGame.prefab
+@@ -888,7 +888,7 @@ Animation:
+   m_GameObject: {fileID: 1272759410483004}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/building/SpiritTower.prefab b/Assets/Resources/building/SpiritTower.prefab
+index 788cd32a..532cd0fb 100644
+--- a/Assets/Resources/building/SpiritTower.prefab
++++ b/Assets/Resources/building/SpiritTower.prefab
+@@ -183,7 +183,7 @@ Animation:
+   m_GameObject: {fileID: 1139400961837632}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 90dca01f5f1600c4d88a81784ebddf62, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 90dca01f5f1600c4d88a81784ebddf62, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/building/low_SpiritTower.prefab b/Assets/Resources/building/low_SpiritTower.prefab
+index acbe1f14..32ec3862 100644
+--- a/Assets/Resources/building/low_SpiritTower.prefab
++++ b/Assets/Resources/building/low_SpiritTower.prefab
+@@ -183,7 +183,7 @@ Animation:
+   m_GameObject: {fileID: 1874993532546132}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 90dca01f5f1600c4d88a81784ebddf62, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 90dca01f5f1600c4d88a81784ebddf62, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/Candy.prefab b/Assets/Resources/environment/Candy.prefab
+index 895058ca..b0d3b042 100644
+--- a/Assets/Resources/environment/Candy.prefab
++++ b/Assets/Resources/environment/Candy.prefab
+@@ -411,7 +411,7 @@ Animation:
+   m_GameObject: {fileID: 1936055921660304}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c5162b98a5f97ce4586dc103ceebbbdb, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c5162b98a5f97ce4586dc103ceebbbdb, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/Ice.prefab b/Assets/Resources/environment/Ice.prefab
+index ccd1feb5..dcb7c600 100644
+--- a/Assets/Resources/environment/Ice.prefab
++++ b/Assets/Resources/environment/Ice.prefab
+@@ -447,7 +447,7 @@ Animation:
+   m_GameObject: {fileID: 1013665329564180}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c9227898482be8c40ad7c1ba185dbd8b, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c9227898482be8c40ad7c1ba185dbd8b, type: 2}
+   m_WrapMode: 0
+@@ -485,7 +485,7 @@ Animation:
+   m_GameObject: {fileID: 1172320716620348}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 80affd17d94500341bb15bced73d76c5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 80affd17d94500341bb15bced73d76c5, type: 2}
+   m_WrapMode: 0
+@@ -904,7 +904,7 @@ Animation:
+   m_GameObject: {fileID: 1794334920687835}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 78a500ac38c152048a145b975cf06922, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 78a500ac38c152048a145b975cf06922, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/Picnic.prefab b/Assets/Resources/environment/Picnic.prefab
+index 0d9b7f3c..ed49f1b2 100644
+--- a/Assets/Resources/environment/Picnic.prefab
++++ b/Assets/Resources/environment/Picnic.prefab
+@@ -428,7 +428,7 @@ Animation:
+   m_GameObject: {fileID: 1700438325927572}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 7200635cd9c79e7439c101564c742f7e, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 7200635cd9c79e7439c101564c742f7e, type: 2}
+   m_WrapMode: 0
+@@ -1010,7 +1010,7 @@ Animation:
+   m_GameObject: {fileID: 1006775338885064}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 6ff0946d8d1b3fe4e930b283e9aaf205, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 6ff0946d8d1b3fe4e930b283e9aaf205, type: 2}
+   m_WrapMode: 0
+@@ -1048,7 +1048,7 @@ Animation:
+   m_GameObject: {fileID: 1290587028057339}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: e75621650f590c64cbec98fa43207362, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: e75621650f590c64cbec98fa43207362, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/Prismo.prefab b/Assets/Resources/environment/Prismo.prefab
+index d371a754..07bc8f20 100644
+--- a/Assets/Resources/environment/Prismo.prefab
++++ b/Assets/Resources/environment/Prismo.prefab
+@@ -150,7 +150,7 @@ Animation:
+   m_GameObject: {fileID: 1054315823458757}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 482e7e87813922c468780546706dc5e9, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 482e7e87813922c468780546706dc5e9, type: 2}
+   m_WrapMode: 0
+@@ -325,7 +325,7 @@ Animation:
+   m_GameObject: {fileID: 1624904539445465}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: eef78a576d6e69640938c9c237a50ae7, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: eef78a576d6e69640938c9c237a50ae7, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/low_Candy.prefab b/Assets/Resources/environment/low_Candy.prefab
+index e50c84bf..88bbf1c7 100644
+--- a/Assets/Resources/environment/low_Candy.prefab
++++ b/Assets/Resources/environment/low_Candy.prefab
+@@ -411,7 +411,7 @@ Animation:
+   m_GameObject: {fileID: 1115925840832047}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c5162b98a5f97ce4586dc103ceebbbdb, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c5162b98a5f97ce4586dc103ceebbbdb, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/low_Ice.prefab b/Assets/Resources/environment/low_Ice.prefab
+index 614fce01..d6b580d0 100644
+--- a/Assets/Resources/environment/low_Ice.prefab
++++ b/Assets/Resources/environment/low_Ice.prefab
+@@ -447,7 +447,7 @@ Animation:
+   m_GameObject: {fileID: 1503367434058099}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: c9227898482be8c40ad7c1ba185dbd8b, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: c9227898482be8c40ad7c1ba185dbd8b, type: 2}
+   m_WrapMode: 0
+@@ -485,7 +485,7 @@ Animation:
+   m_GameObject: {fileID: 1429721394487329}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 80affd17d94500341bb15bced73d76c5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 80affd17d94500341bb15bced73d76c5, type: 2}
+   m_WrapMode: 0
+@@ -904,7 +904,7 @@ Animation:
+   m_GameObject: {fileID: 1163618923355675}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 78a500ac38c152048a145b975cf06922, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 78a500ac38c152048a145b975cf06922, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/low_Picnic.prefab b/Assets/Resources/environment/low_Picnic.prefab
+index 6a1fb6ce..3a92d3f7 100644
+--- a/Assets/Resources/environment/low_Picnic.prefab
++++ b/Assets/Resources/environment/low_Picnic.prefab
+@@ -428,7 +428,7 @@ Animation:
+   m_GameObject: {fileID: 1988730168473706}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 7200635cd9c79e7439c101564c742f7e, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 7200635cd9c79e7439c101564c742f7e, type: 2}
+   m_WrapMode: 0
+@@ -1010,7 +1010,7 @@ Animation:
+   m_GameObject: {fileID: 1751147084923981}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 6ff0946d8d1b3fe4e930b283e9aaf205, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 6ff0946d8d1b3fe4e930b283e9aaf205, type: 2}
+   m_WrapMode: 0
+@@ -1048,7 +1048,7 @@ Animation:
+   m_GameObject: {fileID: 1464358066697135}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: e75621650f590c64cbec98fa43207362, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: e75621650f590c64cbec98fa43207362, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/environment/low_Prismo.prefab b/Assets/Resources/environment/low_Prismo.prefab
+index 05a8de05..c288bb0b 100644
+--- a/Assets/Resources/environment/low_Prismo.prefab
++++ b/Assets/Resources/environment/low_Prismo.prefab
+@@ -150,7 +150,7 @@ Animation:
+   m_GameObject: {fileID: 1142294350091536}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 482e7e87813922c468780546706dc5e9, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 482e7e87813922c468780546706dc5e9, type: 2}
+   m_WrapMode: 0
+@@ -325,7 +325,7 @@ Animation:
+   m_GameObject: {fileID: 1213445856107419}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: eef78a576d6e69640938c9c237a50ae7, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: eef78a576d6e69640938c9c237a50ae7, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/low_SLOTGame.prefab b/Assets/Resources/low_SLOTGame.prefab
+index 19578363..5141ce39 100644
+--- a/Assets/Resources/low_SLOTGame.prefab
++++ b/Assets/Resources/low_SLOTGame.prefab
+@@ -888,7 +888,7 @@ Animation:
+   m_GameObject: {fileID: 1182767875524938}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab b/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab
+index 83e486d2..5423bbb5 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab
+@@ -464,7 +464,7 @@ Animation:
+   m_GameObject: {fileID: 1173805396369270}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 88b32c40c845de147be2fb0a331f3e9c, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 88b32c40c845de147be2fb0a331f3e9c, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_CerebralBloodstorm.prefab b/Assets/Resources/props/FX_Battle_Spell_CerebralBloodstorm.prefab
+index 7b903393..613f575f 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_CerebralBloodstorm.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_CerebralBloodstorm.prefab
+@@ -704,7 +704,7 @@ Animation:
+   m_GameObject: {fileID: 1003254135569172}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_ClairvoyantDaggerStorm.prefab b/Assets/Resources/props/FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
+index 2fa94209..9346d4ec 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
+@@ -673,7 +673,7 @@ Animation:
+   m_GameObject: {fileID: 1711320291807966}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_CornScepter.prefab b/Assets/Resources/props/FX_Battle_Spell_CornScepter.prefab
+index ff6fa710..0ff9cdae 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_CornScepter.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_CornScepter.prefab
+@@ -382,7 +382,7 @@ Animation:
+   m_GameObject: {fileID: 1361934025095502}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 7966ef6c119bbe8409b249d373c1740c, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 7966ef6c119bbe8409b249d373c1740c, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_PumaClaw.prefab b/Assets/Resources/props/FX_Battle_Spell_PumaClaw.prefab
+index dc03fb6c..ff4dc00a 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_PumaClaw.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_PumaClaw.prefab
+@@ -464,7 +464,7 @@ Animation:
+   m_GameObject: {fileID: 1355362399920080}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 1adecdda4ff02614dbd4924dc8584884, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 1adecdda4ff02614dbd4924dc8584884, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_SuperHug.prefab b/Assets/Resources/props/FX_Battle_Spell_SuperHug.prefab
+index 19559a37..6599c357 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_SuperHug.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_SuperHug.prefab
+@@ -351,7 +351,7 @@ Animation:
+   m_GameObject: {fileID: 1486166402872262}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 86cc54a0a27f85c419661be86af09097, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 86cc54a0a27f85c419661be86af09097, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_TomeOfAnkhs.prefab b/Assets/Resources/props/FX_Battle_Spell_TomeOfAnkhs.prefab
+index d00d4e3e..54126996 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_TomeOfAnkhs.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_TomeOfAnkhs.prefab
+@@ -467,7 +467,7 @@ Animation:
+   m_GameObject: {fileID: 1061779282922728}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/GoldBag.prefab b/Assets/Resources/props/GoldBag.prefab
+index 2b39ef63..56e2f0c6 100644
+--- a/Assets/Resources/props/GoldBag.prefab
++++ b/Assets/Resources/props/GoldBag.prefab
+@@ -401,7 +401,7 @@ Animation:
+   m_GameObject: {fileID: 1084823752370869}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 8afc9a8feaa0b4044bbad54d4e691537, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 8afc9a8feaa0b4044bbad54d4e691537, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/P1Tombstone.prefab b/Assets/Resources/props/P1Tombstone.prefab
+index 125db684..5d39fe23 100644
+--- a/Assets/Resources/props/P1Tombstone.prefab
++++ b/Assets/Resources/props/P1Tombstone.prefab
+@@ -46,7 +46,7 @@ Animation:
+   m_GameObject: {fileID: 1521599447351826}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: f331c50cf8efcd046a8852acaa733711, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: f331c50cf8efcd046a8852acaa733711, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_BoneWand.prefab b/Assets/Resources/props/low_FX_Battle_Spell_BoneWand.prefab
+index 64980d31..7f30032e 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_BoneWand.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_BoneWand.prefab
+@@ -464,7 +464,7 @@ Animation:
+   m_GameObject: {fileID: 1287279769627558}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 88b32c40c845de147be2fb0a331f3e9c, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 88b32c40c845de147be2fb0a331f3e9c, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_CerebralBloodstorm.prefab b/Assets/Resources/props/low_FX_Battle_Spell_CerebralBloodstorm.prefab
+index 29b1446d..750bed1e 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_CerebralBloodstorm.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_CerebralBloodstorm.prefab
+@@ -704,7 +704,7 @@ Animation:
+   m_GameObject: {fileID: 1549882242197074}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_ClairvoyantDaggerStorm.prefab b/Assets/Resources/props/low_FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
+index 16eaea86..88fec415 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_ClairvoyantDaggerStorm.prefab
+@@ -673,7 +673,7 @@ Animation:
+   m_GameObject: {fileID: 1498065290016112}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: df8281523bf566141b6bffb128d03257, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_CornScepter.prefab b/Assets/Resources/props/low_FX_Battle_Spell_CornScepter.prefab
+index fad3b952..87b3a174 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_CornScepter.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_CornScepter.prefab
+@@ -382,7 +382,7 @@ Animation:
+   m_GameObject: {fileID: 1530887259091489}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 7966ef6c119bbe8409b249d373c1740c, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 7966ef6c119bbe8409b249d373c1740c, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_PumaClaw.prefab b/Assets/Resources/props/low_FX_Battle_Spell_PumaClaw.prefab
+index 0e21e2c4..dfd86185 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_PumaClaw.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_PumaClaw.prefab
+@@ -464,7 +464,7 @@ Animation:
+   m_GameObject: {fileID: 1496076619589274}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 1adecdda4ff02614dbd4924dc8584884, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 1adecdda4ff02614dbd4924dc8584884, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_SuperHug.prefab b/Assets/Resources/props/low_FX_Battle_Spell_SuperHug.prefab
+index 9c954a46..7c85dc88 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_SuperHug.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_SuperHug.prefab
+@@ -351,7 +351,7 @@ Animation:
+   m_GameObject: {fileID: 1044839451721020}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 86cc54a0a27f85c419661be86af09097, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 86cc54a0a27f85c419661be86af09097, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_TomeOfAnkhs.prefab b/Assets/Resources/props/low_FX_Battle_Spell_TomeOfAnkhs.prefab
+index 90734ef0..e6af88a1 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_TomeOfAnkhs.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_TomeOfAnkhs.prefab
+@@ -467,7 +467,7 @@ Animation:
+   m_GameObject: {fileID: 1042094300921957}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_GoldBag.prefab b/Assets/Resources/props/low_GoldBag.prefab
+index 401a387a..bf0e28ca 100644
+--- a/Assets/Resources/props/low_GoldBag.prefab
++++ b/Assets/Resources/props/low_GoldBag.prefab
+@@ -401,7 +401,7 @@ Animation:
+   m_GameObject: {fileID: 1361062475490633}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 8afc9a8feaa0b4044bbad54d4e691537, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 8afc9a8feaa0b4044bbad54d4e691537, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_Hammer.prefab b/Assets/Resources/props/low_Hammer.prefab
+index 5f1a5b77..073153c1 100644
+--- a/Assets/Resources/props/low_Hammer.prefab
++++ b/Assets/Resources/props/low_Hammer.prefab
+@@ -413,7 +413,7 @@ Animation:
+   m_GameObject: {fileID: 1279264622471444}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: a9efb38db69e1994993b110a5f59ec1d, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: a9efb38db69e1994993b110a5f59ec1d, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_P1Tombstone.prefab b/Assets/Resources/props/low_P1Tombstone.prefab
+index 9e8328bb..7f3bd315 100644
+--- a/Assets/Resources/props/low_P1Tombstone.prefab
++++ b/Assets/Resources/props/low_P1Tombstone.prefab
+@@ -46,7 +46,7 @@ Animation:
+   m_GameObject: {fileID: 1524345290937179}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: f331c50cf8efcd046a8852acaa733711, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: f331c50cf8efcd046a8852acaa733711, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_P2Tombstone.prefab b/Assets/Resources/props/low_P2Tombstone.prefab
+index 9eebea4d..de5b172a 100644
+--- a/Assets/Resources/props/low_P2Tombstone.prefab
++++ b/Assets/Resources/props/low_P2Tombstone.prefab
+@@ -46,7 +46,7 @@ Animation:
+   m_GameObject: {fileID: 1201231851424814}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 0cd9f092a56aff846b47b1a1148e46c0, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 0cd9f092a56aff846b47b1a1148e46c0, type: 2}
+   m_WrapMode: 0
 diff --git a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader b/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader
 index 68adf624..1c0ea3a1 100644
 --- a/Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader
@@ -174,6 +888,173 @@ index 5c44989b..e033eec5 100644
    userData:
    assetBundleName:
    assetBundleVariant:
+diff --git a/Assets/Resources/summons/MaizeWalker.prefab b/Assets/Resources/summons/MaizeWalker.prefab
+index 3cb025d4..e66cd227 100644
+--- a/Assets/Resources/summons/MaizeWalker.prefab
++++ b/Assets/Resources/summons/MaizeWalker.prefab
+@@ -677,7 +677,7 @@ Animation:
+   m_GameObject: {fileID: 1720598564050561}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 46d990f3d2dc0d94a95df285ffcd93b5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 46d990f3d2dc0d94a95df285ffcd93b5, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Resources/summons/low_MaizeWalker.prefab b/Assets/Resources/summons/low_MaizeWalker.prefab
+index 4841a071..d3b9d523 100644
+--- a/Assets/Resources/summons/low_MaizeWalker.prefab
++++ b/Assets/Resources/summons/low_MaizeWalker.prefab
+@@ -677,7 +677,7 @@ Animation:
+   m_GameObject: {fileID: 1550193350203884}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 46d990f3d2dc0d94a95df285ffcd93b5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 46d990f3d2dc0d94a95df285ffcd93b5, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/Scenes/StartupScene.unity b/Assets/Scene/Scenes/StartupScene.unity
+index 372bad24..a84b1131 100644
+--- a/Assets/Scene/Scenes/StartupScene.unity
++++ b/Assets/Scene/Scenes/StartupScene.unity
+@@ -1107,7 +1107,7 @@ Animation:
+   m_GameObject: {fileID: 31}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/_hirez/Scenes/AdventureTime.unity b/Assets/Scene/_hirez/Scenes/AdventureTime.unity
+index 260df812..178fa965 100644
+--- a/Assets/Scene/_hirez/Scenes/AdventureTime.unity
++++ b/Assets/Scene/_hirez/Scenes/AdventureTime.unity
+@@ -111193,7 +111193,7 @@ Animation:
+   m_GameObject: {fileID: 1512}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 17074387dd08f8341a26356fae61f388, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 17074387dd08f8341a26356fae61f388, type: 2}
+   m_WrapMode: 0
+@@ -111513,7 +111513,7 @@ Animation:
+   m_GameObject: {fileID: 1819}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: edbaf83852ff1064e93710aa412149e5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: edbaf83852ff1064e93710aa412149e5, type: 2}
+   m_WrapMode: 0
+@@ -111542,7 +111542,7 @@ Animation:
+   m_GameObject: {fileID: 1895}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: fa80d9c2ade2cc7478452df0e6df15dc, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: fa80d9c2ade2cc7478452df0e6df15dc, type: 2}
+   m_WrapMode: 0
+@@ -111647,7 +111647,7 @@ Animation:
+   m_GameObject: {fileID: 1836}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: edbaf83852ff1064e93710aa412149e5, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: edbaf83852ff1064e93710aa412149e5, type: 2}
+   m_WrapMode: 0
+@@ -111662,7 +111662,7 @@ Animation:
+   m_GameObject: {fileID: 1856}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 04d63a22cbfb49f4f96def068b41983b, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 04d63a22cbfb49f4f96def068b41983b, type: 2}
+   m_WrapMode: 0
+@@ -111677,7 +111677,7 @@ Animation:
+   m_GameObject: {fileID: 3357}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: fa52f8dca7a52e14796f991f7fb2d1de, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: fa52f8dca7a52e14796f991f7fb2d1de, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/_hirez/Scenes/AssetLoader.unity b/Assets/Scene/_hirez/Scenes/AssetLoader.unity
+index 09136668..6228d040 100644
+--- a/Assets/Scene/_hirez/Scenes/AssetLoader.unity
++++ b/Assets/Scene/_hirez/Scenes/AssetLoader.unity
+@@ -939,7 +939,7 @@ Animation:
+   m_GameObject: {fileID: 11}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/_hirez/Scenes/AuthScene.unity b/Assets/Scene/_hirez/Scenes/AuthScene.unity
+index f6275066..4b927675 100644
+--- a/Assets/Scene/_hirez/Scenes/AuthScene.unity
++++ b/Assets/Scene/_hirez/Scenes/AuthScene.unity
+@@ -2764,7 +2764,7 @@ Animation:
+   m_GameObject: {fileID: 11}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/_hirez/Scenes/BattleScene.unity b/Assets/Scene/_hirez/Scenes/BattleScene.unity
+index 2f847e9e..c1bf2b7c 100644
+--- a/Assets/Scene/_hirez/Scenes/BattleScene.unity
++++ b/Assets/Scene/_hirez/Scenes/BattleScene.unity
+@@ -80392,7 +80392,7 @@ Animation:
+   m_GameObject: {fileID: 2013}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_WrapMode: 0
+@@ -80497,7 +80497,7 @@ Animation:
+   m_GameObject: {fileID: 2138}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_WrapMode: 0
+@@ -80547,7 +80547,7 @@ Animation:
+   m_GameObject: {fileID: 2203}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: 20bf505336ea53a46b330f652deede6a, type: 2}
+   m_WrapMode: 0
+diff --git a/Assets/Scene/_hirez/Scenes/DeckManagerScene.unity b/Assets/Scene/_hirez/Scenes/DeckManagerScene.unity
+index 4e2f3b2a..4b8d85ed 100644
+--- a/Assets/Scene/_hirez/Scenes/DeckManagerScene.unity
++++ b/Assets/Scene/_hirez/Scenes/DeckManagerScene.unity
+@@ -42557,7 +42557,7 @@ Animation:
+   m_GameObject: {fileID: 1407}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: cae134a967cca86479ba19428968b114, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: cae134a967cca86479ba19428968b114, type: 2}
+   m_WrapMode: 0
 diff --git a/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs b/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs
 index 1f08ab18..f4ec060a 100644
 --- a/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs
