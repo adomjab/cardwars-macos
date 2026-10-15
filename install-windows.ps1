@@ -68,9 +68,9 @@ try {
 
     # Shared game data: yearly event schedules (the game's own ended in 2025)
     # and the gem prices, so Mac and Windows players get the same.
-    Write-Step 'Adding events and gem prices...'
+    Write-Step 'Adding events, gem prices and fixes...'
     $blueprints = Join-Path $GameDir 'CardWars_Data\StreamingAssets\Blueprints'
-    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json', 'db_IAP.json') {
+    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json', 'db_IAP.json', 'db_Leaders.json') {
         $target = Join-Path $blueprints $f
         if ($env:CARDWARS_DATA_DIR) {
             Copy-Item (Join-Path $env:CARDWARS_DATA_DIR $f) $target -Force

@@ -87,8 +87,8 @@ into the new account.
   calendar, special card packs) repeat every year, and **gems cost the same on
   Mac and Windows** (bought with coins: 500 coins for 1 gem, down to 12,000
   coins for 36). The installers add these from the [`gamedata`](gamedata/)
-  folder; if you installed before they were added, run the install command
-  again.
+  folder, along with a fix for the Fionna & Cake **level 24** crash. If you
+  installed before they were added, run the install command again.
 
 ## Credits
 

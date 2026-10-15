@@ -31,9 +31,9 @@ mv "$TMP/CardWars.app" "$DEST/" 2>/dev/null || sudo mv "$TMP/CardWars.app" "$DES
 
 # Shared game data: yearly event schedules (the game's own ended in 2025) and
 # the gem prices, so Mac and Windows players get the same.
-echo "==> Adding events and gem prices..."
+echo "==> Adding events, gem prices and fixes..."
 BLUEPRINTS="$DEST/CardWars.app/Contents/Resources/Data/StreamingAssets/Blueprints"
-for f in db_Schedule.json db_GachaSchedule.json db_IAP.json; do
+for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json; do
   curl -fsSL -o "$TMP/$f" "https://raw.githubusercontent.com/$REPO/main/gamedata/$f"
   cp "$TMP/$f" "$BLUEPRINTS/$f" 2>/dev/null || sudo cp "$TMP/$f" "$BLUEPRINTS/$f"
   # A copy downloaded by the old server's content updates would win; remove it.
