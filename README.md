@@ -19,6 +19,8 @@ A patch for [shishkabob27/CardWars](https://github.com/shishkabob27/CardWars)
 | `Assets/Resources/shaders/Unlit-Alpha-With-Fade2.shader` (+ `.meta`) | Rewrites this shader as normal Cg source | The original was a ripped, compiled **GLES-only** shader, so it can't run on Metal/OpenGL Core (or D3D) and draws nothing or pink |
 | `Assets/Scripts/Assembly-CSharp/SQSettings.cs` | Wraps the iOS-only `[DllImport("__Internal")]` declarations in `#if UNITY_IOS` | They don't exist in a desktop player |
 | `Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs` | `Application.dataPath + Path.PathSeparator + name` → `Path.Combine(...)` | `PathSeparator` is `:` on macOS (`;` on Windows), so the path was wrong |
+| `Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs` | Falls back to the `_0`-renamed clip when a target doesn't have the requested one | Restores the camera fly-in/out when opening chests: the chest's and camera's clips shared a name and one was renamed when the project was recovered |
+| `Assets/StreamingAssets/Blueprints/db_Leaders.json` | `Leader_Gunter_FC` uses character `Gunter` instead of the non-existent `Gunter02` | Fionna & Cake level 24 (quest 5039) crashed / went black after its cutscene |
 | `Assets/Editor/MacBuild.cs` (new) | Adds a **Card Wars > Build macOS** menu item and a batch-mode build method | A one-step macOS build |
 
 The rest of the game code was already cross-platform. It has no native plugins,

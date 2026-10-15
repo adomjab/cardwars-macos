@@ -174,6 +174,40 @@ index 5c44989b..e033eec5 100644
    userData:
    assetBundleName:
    assetBundleVariant:
+diff --git a/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs b/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs
+index 1f08ab18..f4ec060a 100644
+--- a/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs
++++ b/Assets/Scripts/Assembly-CSharp-firstpass/UIButtonPlayAnimation.cs
+@@ -95,6 +95,20 @@ public class UIButtonPlayAnimation : MonoBehaviour
+ 		}
+ 	}
+ 
++	// When the project was recovered from the shipped game, animations that
++	// shared a name got a "_0" suffix (e.g. the chest's and the camera's
++	// "NChest_OpenLvl5"). Callers set one name for several targets, so use the
++	// other spelling when this target doesn't have the requested clip.
++	private static string ResolveClipName(Animation anim, string name)
++	{
++		if (anim == null || string.IsNullOrEmpty(name) || anim[name] != null)
++		{
++			return name;
++		}
++		string alternative = name.EndsWith("_0") ? name.Substring(0, name.Length - 2) : name + "_0";
++		return (anim[alternative] != null) ? alternative : name;
++	}
++
+ 	private void Play(bool forward)
+ 	{
+ 		if (target == null)
+@@ -111,7 +125,7 @@ public class UIButtonPlayAnimation : MonoBehaviour
+ 		}
+ 		int num = 0 - playDirection;
+ 		Direction direction = ((!forward) ? ((Direction)num) : playDirection);
+-		ActiveAnimation activeAnimation = ActiveAnimation.Play(target, clipName, direction, ifDisabledOnPlay, disableWhenFinished);
++		ActiveAnimation activeAnimation = ActiveAnimation.Play(target, ResolveClipName(target, clipName), direction, ifDisabledOnPlay, disableWhenFinished);
+ 		if (!(activeAnimation == null))
+ 		{
+ 			if (resetOnPlay)
 diff --git a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs b/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
 index 4395455b..a26f0e49 100644
 --- a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
@@ -207,6 +241,19 @@ index bdf9599e..dd606f88 100644
  
  	private static string getJsonPath(string filePath)
  	{
+diff --git a/Assets/StreamingAssets/Blueprints/db_Leaders.json b/Assets/StreamingAssets/Blueprints/db_Leaders.json
+index 4242f105..e9e0c6c0 100644
+--- a/Assets/StreamingAssets/Blueprints/db_Leaders.json
++++ b/Assets/StreamingAssets/Blueprints/db_Leaders.json
+@@ -46,7 +46,7 @@
+ 	{"ID":"Leader_Slumpy","Name":"!!LEADER_SLUMPY","CharacterID":"Slumpy","IconAtlas":"CharacterIconAtlas02","SpriteName":"Portrait_SnowJam_Frame","SpriteNameHero":"Portrait_SnowJam_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SLUMPY_DESC","LvUpSchemeID":"A","Rarity":"1","BaseHP":"10","ScriptName":"ReduceTypeCostLeader","Cooldown":"3","Val1":"1","Val2":"","forFaction":"","forLandscape":"","forCardType":"Creature","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"1"},
+ 	{"ID":"Leader_SnowFist","Name":"!!LEADER_SNOWFIST","CharacterID":"SnowFist","IconAtlas":"CharacterIconAtlas02","SpriteName":"Portrait_SnowSnow_Frame","SpriteNameHero":"Portrait_SnowSnow_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SNOWFIST_DESC","LvUpSchemeID":"A","Rarity":"1","BaseHP":"10","ScriptName":"ReduceTypeCostLeader","Cooldown":"3","Val1":"2","Val2":"","forFaction":"","forLandscape":"","forCardType":"Spell","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"1"},
+ 	{"ID":"Leader_IceQueen","Name":"!!LEADER_ICEQUEEN","CharacterID":"IceQueen","IconAtlas":"CharacterIconAtlas02","SpriteName":"Portrait_IceQueen_Frame","SpriteNameHero":"Portrait_IceQueen_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_ICEQUEEN_DESC","LvUpSchemeID":"A","Rarity":"1","BaseHP":"10","ScriptName":"DEFBonusAllCreaturesLeader","Cooldown":"3","Val1":"4","Val2":"","forFaction":"","forLandscape":"","forCardType":"","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"10"},
+-	{"ID":"Leader_Gunter_FC","Name":"!!LEADER_GUNTER","CharacterID":"Gunter02","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_Gunter_Frame","SpriteNameHero":"Portrait_Gunter_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_GUNTER_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ReturnCardTypeLeader","Cooldown":"3","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"Spell","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"1"},
++	{"ID":"Leader_Gunter_FC","Name":"!!LEADER_GUNTER","CharacterID":"Gunter","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_Gunter_Frame","SpriteNameHero":"Portrait_Gunter_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_GUNTER_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ReturnCardTypeLeader","Cooldown":"3","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"Spell","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"1"},
+ 	{"ID":"Leader_MarshallLee","Name":"!!MARSHALL_LEE","CharacterID":"MarshallLee","IconAtlas":"CharacterIconAtlas02","SpriteName":"Portrait_MarshallLee_Frame","SpriteNameHero":"Portrait_MarshallLee_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_MARSHALLLEE_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ATKBonusAllCreaturesLeader","Cooldown":"3","Val1":"3","Val2":"","forFaction":"","forLandscape":"","forCardType":"","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"7"},
+ 	{"ID":"Leader_SuperFinnDoctor","Name":"!!LEADER_FINNDOCTOR","CharacterID":"FinnDoctor","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_DoctorFinn_Frame","SpriteNameHero":"Portrait_DoctorFinn_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SUPERFINNDOCTOR_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ReturnCardTypeLeader","Cooldown":"2","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"Spell","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"0","StartLevel":"1"},
+ 	{"ID":"Leader_SuperPrincessBubblegum","Name":"!!LEADER_PRINCESSBUBBLEGUM","CharacterID":"PrincessBubblegum","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_Princess_Frame","SpriteNameHero":"Portrait_Princess_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SUPERPRINCESSBUBBLEGUM_DESC","LvUpSchemeID":"A","Rarity":"1","BaseHP":"10","ScriptName":"HealAllCreaturesLeader","Cooldown":"2","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"0","StartLevel":"2"},
 diff --git a/ProjectSettings/ProjectSettings.asset b/ProjectSettings/ProjectSettings.asset
 index 4e2287c6..b9265584 100644
 --- a/ProjectSettings/ProjectSettings.asset
