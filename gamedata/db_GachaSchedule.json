@@ -780,19 +780,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2024-12-26 16:00 -7:00",
-		"EndDate": "2025-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2025-01-14 16:00 -7:00",
 		"EndDate": "2025-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -1125,19 +1112,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2025-12-26 16:00 -7:00",
-		"EndDate": "2026-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
@@ -1482,19 +1456,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2026-12-26 16:00 -7:00",
-		"EndDate": "2027-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2027-01-14 16:00 -7:00",
 		"EndDate": "2027-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -1827,19 +1788,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2027-12-26 16:00 -7:00",
-		"EndDate": "2028-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
@@ -2184,19 +2132,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2028-12-26 16:00 -7:00",
-		"EndDate": "2029-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2029-01-14 16:00 -7:00",
 		"EndDate": "2029-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -2529,19 +2464,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2029-12-26 16:00 -7:00",
-		"EndDate": "2030-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
@@ -2886,19 +2808,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2030-12-26 16:00 -7:00",
-		"EndDate": "2031-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2031-01-14 16:00 -7:00",
 		"EndDate": "2031-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -3231,19 +3140,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2031-12-26 16:00 -7:00",
-		"EndDate": "2032-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
@@ -3588,19 +3484,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2032-12-26 16:00 -7:00",
-		"EndDate": "2033-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2033-01-14 16:00 -7:00",
 		"EndDate": "2033-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -3933,19 +3816,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2033-12-26 16:00 -7:00",
-		"EndDate": "2034-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
@@ -4290,19 +4160,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2034-12-26 16:00 -7:00",
-		"EndDate": "2035-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2035-01-14 16:00 -7:00",
 		"EndDate": "2035-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -4641,19 +4498,6 @@
 		"Weight5": ""
 	},
 	{
-		"StartDate": "2035-12-26 16:00 -7:00",
-		"EndDate": "2036-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
 		"StartDate": "2036-01-14 16:00 -7:00",
 		"EndDate": "2036-01-17 0:00 -7:00",
 		"ChestType": "Premium",
@@ -4986,19 +4830,6 @@
 		"Coins": "",
 		"Gems": "3",
 		"Weight1": "HolidayCarnival",
-		"Weight2": "",
-		"Weight3": "",
-		"Weight4": "",
-		"Weight5": ""
-	},
-	{
-		"StartDate": "2036-12-26 16:00 -7:00",
-		"EndDate": "2037-01-29 0:00 -7:00",
-		"ChestType": "Premium",
-		"Party": "party_obsidian",
-		"Coins": "",
-		"Gems": "3",
-		"Weight1": "ObsidianCarnival",
 		"Weight2": "",
 		"Weight3": "",
 		"Weight4": "",
