@@ -83,7 +83,7 @@ try {
     # and the gem prices, so Mac and Windows players get the same.
     Write-Step 'Adding events, gem prices and fixes...'
     $blueprints = Join-Path $GameDir 'CardWars_Data\StreamingAssets\Blueprints'
-    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json', 'db_IAP.json', 'db_Leaders.json', 'db_Spells.json') {
+    foreach ($f in 'db_Schedule.json', 'db_GachaSchedule.json', 'db_IAP.json', 'db_Leaders.json', 'db_Spells.json', 'db_Characters.json') {
         $target = Join-Path $blueprints $f
         if ($env:CARDWARS_DATA_DIR) {
             Copy-Item (Join-Path $env:CARDWARS_DATA_DIR $f) $target -Force

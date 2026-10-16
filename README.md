@@ -107,7 +107,8 @@ Calendar link:
   Mac and Windows** (bought with coins: 500 coins for 1 gem, down to 12,000
   coins for 36). The installers add these from the [`gamedata`](gamedata/)
   folder, along with a fix for the Fionna & Cake **level 24** crash and a
-  cheaper **Brief Power** spell (costs 1 instead of 3). If you installed
+  cheaper **Brief Power** spell (costs 1 instead of 3), and Lumpy Space
+  Princess and Prince battles play LSP's own music. If you installed
   before they were added, run the install command again.
 
 ## Credits
