@@ -82,14 +82,21 @@ def match_odds(row):
     return row
 
 
+# The 2024 calendar ends with an Obsidian Festival from 26 Dec to 29 Jan that
+# overlaps the January carnivals; leave that one out (the short late-November
+# Obsidian Festival stays).
+def is_long_obsidian(row):
+    return row.get("Party") == "party_obsidian" and row["StartDate"][5:10] == "12-26" and row["EndDate"][5:10] == "01-29"
+
+
 def make_gacha():
     with open(os.path.join(HERE, "original", "db_GachaSchedule.json"), encoding="utf-8") as f:
         original = json.load(f)
     defaults = [r for r in original if r["StartDate"].lower() == "default"]
     dated = [r for r in original if r["StartDate"].lower() != "default"]
     template = [r for r in dated if r["StartDate"].startswith(str(GACHA_TEMPLATE_YEAR))]
-    dated = [match_odds(r) for r in dated]
-    template = [match_odds(r) for r in template]
+    dated = [match_odds(r) for r in dated if not is_long_obsidian(r)]
+    template = [match_odds(r) for r in template if not is_long_obsidian(r)]
     rows = list(defaults) + dated
     for year in range(GACHA_TEMPLATE_YEAR + 1, LAST_YEAR + 1):
         for r in template:
