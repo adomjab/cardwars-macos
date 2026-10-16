@@ -106,9 +106,10 @@ Calendar link:
   calendar, special card packs) repeat every year, and **gems cost the same on
   Mac and Windows** (bought with coins: 500 coins for 1 gem, down to 12,000
   coins for 36). The installers add these from the [`gamedata`](gamedata/)
-  folder, along with a fix for the Fionna & Cake **level 24** crash and a
-  cheaper **Brief Power** spell (costs 1 instead of 3), and Lumpy Space
-  Princess and Prince battles play LSP's own music. If you installed
+  folder, along with a fix for the Fionna & Cake **level 24** crash, and
+  Lumpy Space Princess and Prince battles play LSP's own music.
+- **Cards have their original stats** from the mobile game (attack, defense,
+  costs, floop costs and abilities), not the 2023 rebalance in the PC port. If you installed
   before they were added, run the install command again.
 
 ## Credits
