@@ -81,10 +81,27 @@ class ServerTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.tmp = tempfile.mkdtemp()
+        # A carnival starting in 12 hours and a holiday that already started.
+        soon = time.gmtime(time.time() + 12 * 3600)
+        with open(os.path.join(cls.tmp, "db_GachaSchedule.json"), "w") as f:
+            json.dump([
+                {"StartDate": "default", "EndDate": "default", "Party": ""},
+                {"StartDate": time.strftime("%Y-%m-%d %H:%M +0:00", soon), "EndDate": "2099-01-01 0:00 +0:00",
+                 "Party": "party_halloween"},
+                {"StartDate": "2001-01-01 0:00 +0:00", "EndDate": "2001-01-02 0:00 +0:00", "Party": "party_gold"},
+            ], f)
+        with open(os.path.join(cls.tmp, "db_Schedule.json"), "w") as f:
+            json.dump([{"item": "Christmas", "category": "battle_level", "startDate": "01/12/2001",
+                        "endDate": "31/12/2001"}], f)
+        with open(os.path.join(cls.tmp, "announcements.json"), "w") as f:
+            json.dump([
+                {"id": "welcome", "message": "Welcome to our server!", "coins": 1000, "gems": 5},
+                {"id": "old", "message": "Expired", "start": "2001-01-01", "end": "2001-02-01"},
+            ], f)
         cls.port = free_port()
         cls.proc = subprocess.Popen(
             [sys.executable, os.path.join(HERE, "cardwars_server.py"), "--host", "127.0.0.1",
-             "--port", str(cls.port), "--db", os.path.join(cls.tmp, "test.db")],
+             "--port", str(cls.port), "--db", os.path.join(cls.tmp, "test.db"), "--events-url", ""],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         for _ in range(50):
             try:
@@ -230,6 +247,34 @@ class ServerTest(unittest.TestCase):
         # Only the attacker can finish a match
         status, body, _ = b.post_form("multiplayer/matchmake/find/", {"name": "carol", "level": 1})
         self.assertEqual(status, 403)
+
+
+class MessagesTest(ServerTest):
+    def test_messages(self):
+        c = self.login("frank", "pw1234", "dev-f")
+        status, text, _ = c.get_file("messages_received_ids")
+        ids = json.loads(text)
+        self.assertEqual(sorted(ids), ["carnival-halloween-" + time.strftime("%Y%m%d", time.gmtime(time.time() + 12 * 3600)),
+                                       "custom-welcome"])
+        for msg_id in ids:
+            status, text, _ = c.get_file("messages_get/" + msg_id)
+            self.assertEqual(status, 200)
+            msg = json.loads(text)
+            self.assertIn("message", msg)
+            if msg_id == "custom-welcome":
+                self.assertEqual((msg["soft_currency"], msg["hard_currency"]), (1000, 5))
+            else:
+                self.assertIn("Halloween Festival", msg["message"])
+        # Shown once: nothing left next time
+        self.assertEqual(json.loads(c.get_file("messages_received_ids")[1]), [])
+        # Unknown id still answers 200 (the client would hang otherwise)
+        status, text, _ = c.get_file("messages_get/nope")
+        self.assertEqual(status, 200)
+        self.assertIn("message", json.loads(text))
+
+    def test_guest_gets_no_messages(self):
+        g = Client(self.base, "guest-dev")
+        self.assertEqual(json.loads(g.get_file("messages_received_ids")[1]), [])
 
 
 if __name__ == "__main__":

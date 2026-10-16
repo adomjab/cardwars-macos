@@ -270,3 +270,38 @@ and re-sign it with `codesign --force --deep --sign - CardWars.app`.
   `cp -R ~/Library/Application\ Support/shishkabob/Card\ Wars ~/Desktop/CardWars-save-backup`)
 - Use a password you don't use anywhere else: the game sends it without
   encryption (plain `http://`).
+
+## Event reminders and announcements
+
+When players log in, the game can show a message pop-up. The server uses it
+for two things:
+
+- **Event reminders (automatic).** In the 24 hours before each carnival
+  (Halloween Festival, Rare Card Carnival, ...) and before the Halloween and
+  Christmas months, logged-in players see a reminder once. The server reads
+  the schedule from the repo's `gamedata` folder and refreshes it every 6
+  hours, so it always matches what the installers give players.
+- **Your own announcements.** Create `/var/lib/cardwars/announcements.json` on
+  the server:
+  ```
+  sudo nano /var/lib/cardwars/announcements.json
+  ```
+  ```json
+  [
+    {
+      "id": "welcome-2026",
+      "message": "Welcome to our Card Wars server! Here are some coins to get you started.",
+      "coins": 10000,
+      "gems": 5,
+      "start": "2026-10-20",
+      "end": "2026-11-20"
+    }
+  ]
+  ```
+  Each player sees each announcement once, the next time they log in between
+  `start` and `end` (dates in UTC; `"2026-10-20T18:00"` also works). `coins`
+  and `gems` are optional gifts, added when the player taps OK. Give every
+  announcement a new `id`; reusing an `id` won't show it again to people who
+  already saw it. Changes apply immediately, no restart needed.
+
+Guests (not logged in) don't get messages.

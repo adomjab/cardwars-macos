@@ -120,6 +120,14 @@ CREATE TABLE IF NOT EXISTS meta (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
 );
+CREATE TABLE IF NOT EXISTS messages (
+    username TEXT NOT NULL,
+    msg_id TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    listed REAL NOT NULL,
+    fetched REAL,
+    PRIMARY KEY (username, msg_id)
+);
 """
 
 
@@ -159,14 +167,164 @@ def current_tournament(now=None):
     return tid, end
 
 
+# ----------------------------------------------------------- announcements --
+
+EVENTS_URL = "https://raw.githubusercontent.com/adomjab/cardwars-macos/main/gamedata"
+EVENT_FILES = ("db_GachaSchedule.json", "db_Schedule.json")
+REMIND_BEFORE = dt.timedelta(hours=24)
+
+# Carnival banners and descriptions, as the game shows them (EN_Menu).
+CARNIVALS = {
+    "party_plains": ("Plains Party", "Plains cards have 5x chance to drop in the Algebraic Chest."),
+    "party_leader": ("Hero Card Carnival", "Hero Cards have 10x chance to drop in the Algebraic Chest."),
+    "party_cotton": ("Nicelands Jubilee", "Nicelands cards have 5x chance to drop in the Algebraic Chest."),
+    "party_swamp": ("Swamp Shindig", "Swamp cards have 5x chance to drop in the Algebraic Chest."),
+    "party_rare": ("Rare Card Carnival", "3x chance for 4 and 5 star cards in the Algebraic Chest."),
+    "party_sand": ("Sandy Beach Bash", "Sandy Beach creatures have 5x chance to drop in the Algebraic Chest."),
+    "party_corn": ("Corn Carnival", "Corn cards have 5x chance to drop in the Algebraic Chest."),
+    "party_gold": ("Gold Gala", "Gold Creatures have 3x chance to drop in the Algebraic Chest."),
+    "party_halloween": ("Halloween Festival", "Limited Time Halloween Creatures and Buildings in the Halloween Chest!"),
+    "party_obsidian": ("Obsidian Festival", "For a Limited Time, Black Cards are available in the Algebraic Chest."),
+    "party_holiday": ("Holiday Festival", "Limited Time Holiday Creatures and Buildings in the Holiday Chest!"),
+}
+HOLIDAY_BATTLES = {
+    "Halloween": "Halloween starts tomorrow! All month, story battles take place in the spooky Halloween arena.",
+    "Christmas": "Christmas starts tomorrow! All month, story battles take place in the Christmas treehouse.",
+}
+
+
+def parse_carnival_time(text):
+    """'2026-10-28 16:00 -7:00' -> aware UTC datetime."""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2}) (\d{1,2}):(\d{2}) ([+-]?\d{1,2}):(\d{2})$", text.strip())
+    if not m:
+        return None
+    y, mo, d, h, mi, oh, om = (int(x) for x in m.groups())
+    offset = dt.timedelta(hours=oh, minutes=-om if oh < 0 else om)
+    return dt.datetime(y, mo, d, h, mi, tzinfo=dt.timezone(offset)).astimezone(dt.timezone.utc)
+
+
+def parse_day(text):
+    """'01/10/2026' (dd/MM/yyyy, as the game reads it) -> aware UTC datetime."""
+    try:
+        return dt.datetime.strptime(text.strip(), "%d/%m/%Y").replace(tzinfo=dt.timezone.utc)
+    except ValueError:
+        return None
+
+
+def parse_when(text):
+    """Custom announcement times: '2026-10-20' or '2026-10-20T18:00' (UTC)."""
+    for fmt in ("%Y-%m-%dT%H:%M", "%Y-%m-%d %H:%M", "%Y-%m-%d"):
+        try:
+            return dt.datetime.strptime(text.strip(), fmt).replace(tzinfo=dt.timezone.utc)
+        except ValueError:
+            pass
+    return None
+
+
+class Announcements:
+    """Messages for the game's login pop-up: reminders the day before each
+    carnival or holiday event, plus custom ones from announcements.json."""
+
+    def __init__(self, data_dir, events_url=EVENTS_URL):
+        self.data_dir = data_dir
+        self.events_url = events_url
+        self.lock = threading.Lock()
+        self.events = []  # (start, msg_id, text)
+        self.load_events()
+
+    def refresh_forever(self, every=6 * 3600):
+        while True:
+            self.download_events()
+            self.load_events()
+            time.sleep(every)
+
+    def download_events(self):
+        if not self.events_url:
+            return
+        import urllib.request
+        for name in EVENT_FILES:
+            try:
+                with urllib.request.urlopen("%s/%s" % (self.events_url, name), timeout=30) as r:
+                    data = r.read()
+                json.loads(data)
+                tmp = os.path.join(self.data_dir, name + ".tmp")
+                with open(tmp, "wb") as f:
+                    f.write(data)
+                os.replace(tmp, os.path.join(self.data_dir, name))
+            except Exception as e:
+                log.warning("could not refresh %s: %s", name, e)
+
+    def load_events(self):
+        events = []
+        try:
+            with open(os.path.join(self.data_dir, "db_GachaSchedule.json"), encoding="utf-8-sig") as f:
+                for row in json.load(f):
+                    party = row.get("Party") or ""
+                    start = parse_carnival_time(row.get("StartDate") or "")
+                    if party in CARNIVALS and start:
+                        name, desc = CARNIVALS[party]
+                        events.append((start, "carnival-%s-%s" % (party[6:], start.strftime("%Y%m%d")),
+                                       "Coming up in less than a day: %s! %s" % (name, desc)))
+        except (OSError, ValueError) as e:
+            log.warning("no carnival schedule: %s", e)
+        try:
+            with open(os.path.join(self.data_dir, "db_Schedule.json"), encoding="utf-8-sig") as f:
+                for row in json.load(f):
+                    item = row.get("item")
+                    if row.get("category") == "battle_level" and item in HOLIDAY_BATTLES:
+                        start = parse_day(row.get("startDate") or "")
+                        if start:
+                            events.append((start, "holiday-%s-%s" % (item.lower(), start.strftime("%Y%m%d")),
+                                           HOLIDAY_BATTLES[item]))
+        except (OSError, ValueError) as e:
+            log.warning("no holiday schedule: %s", e)
+        with self.lock:
+            self.events = events
+        log.info("loaded %d scheduled events for reminders", len(events))
+
+    def custom(self):
+        path = os.path.join(self.data_dir, "announcements.json")
+        try:
+            with open(path, encoding="utf-8-sig") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            return []
+        except (OSError, ValueError) as e:
+            log.warning("announcements.json is not valid JSON: %s", e)
+            return []
+
+    def active(self, now=None):
+        """Messages to show right now, as {msg_id: payload}."""
+        now = now or dt.datetime.now(dt.timezone.utc)
+        out = {}
+        with self.lock:
+            events = list(self.events)
+        for start, msg_id, text in events:
+            if now < start <= now + REMIND_BEFORE:
+                out[msg_id] = {"message": text}
+        for item in self.custom():
+            msg_id = re.sub(r"[^A-Za-z0-9_-]", "", str(item.get("id", "")))
+            text = str(item.get("message", "")).strip()
+            start = parse_when(str(item.get("start", "2000-01-01")))
+            end = parse_when(str(item.get("end", "2100-01-01")))
+            if not msg_id or not text or not start or not end:
+                continue
+            if start <= now < end:
+                out["custom-" + msg_id] = {"message": text,
+                                           "soft_currency": max(0, to_int(item.get("coins"))),
+                                           "hard_currency": max(0, to_int(item.get("gems")))}
+        return out
+
+
 # ------------------------------------------------------------------ server --
 
 class CardWarsServer(ThreadingHTTPServer):
     daemon_threads = True
 
-    def __init__(self, addr, store):
+    def __init__(self, addr, store, announcements=None):
         super().__init__(addr, Handler)
         self.store = store
+        self.announcements = announcements
         self.login_failures = {}
         self.failures_lock = threading.Lock()
 
@@ -394,10 +552,11 @@ class Handler(BaseHTTPRequestHandler):
         if len(parts) == 2 and parts[1] == "game":
             return self.handle_game(method, parts[0])
         if parts and parts[0] == "messages_received_ids":
-            self.send_gzip("[]")
+            self.send_gzip(json.dumps(self.list_messages()))
             return True
         if parts and parts[0] == "messages_get":
-            return False
+            self.send_gzip(json.dumps(self.fetch_message(parts[1] if len(parts) > 1 else "")))
+            return True
         if parts and parts[0] in ("user_info", "user_add_facebook"):
             self.send_gzip("{}")
             return True
@@ -405,6 +564,30 @@ class Handler(BaseHTTPRequestHandler):
             self.send_gzip("[]")
             return True
         return False
+
+    # Login pop-up messages. The client asks for the list of ids, then fetches
+    # each id in turn; if a fetch isn't a 200 it waits forever, so every listed
+    # id must always be fetchable (each player's payload is stored on listing).
+
+    def list_messages(self):
+        me = self.me()
+        if not me or self.server.announcements is None:
+            return []
+        now = time.time()
+        for msg_id, payload in self.server.announcements.active().items():
+            self.store.run("INSERT OR IGNORE INTO messages (username, msg_id, payload, listed) VALUES (?, ?, ?, ?)",
+                           me, msg_id, json.dumps(payload), now)
+        rows = self.store.all("SELECT msg_id FROM messages WHERE username=? AND fetched IS NULL ORDER BY listed, msg_id", me)
+        return [r["msg_id"] for r in rows]
+
+    def fetch_message(self, msg_id):
+        me = self.me()
+        row = self.store.one("SELECT payload FROM messages WHERE username=? AND msg_id=?", me, msg_id) if me else None
+        if row is None:
+            return {"message": "Welcome back to Card Wars!"}
+        self.store.run("UPDATE messages SET fetched=? WHERE username=? AND msg_id=? AND fetched IS NULL",
+                       time.time(), me, msg_id)
+        return json.loads(row["payload"])
 
     def handle_game(self, method, username):
         owner = self.claim(username)
@@ -803,10 +986,17 @@ def main():
     parser.add_argument("--host", default="0.0.0.0")
     parser.add_argument("--port", type=int, default=int(os.environ.get("CARDWARS_PORT", 80)))
     parser.add_argument("--db", default=os.environ.get("CARDWARS_DB", "cardwars.db"))
+    parser.add_argument("--data-dir", default=None,
+                        help="folder for the event schedule and announcements.json (default: next to the db)")
+    parser.add_argument("--events-url", default=os.environ.get("CARDWARS_EVENTS_URL", EVENTS_URL),
+                        help="where to refresh the event schedule from; empty to disable")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     store = Store(args.db)
-    httpd = CardWarsServer((args.host, args.port), store)
+    data_dir = args.data_dir or os.path.dirname(os.path.abspath(args.db))
+    announcements = Announcements(data_dir, args.events_url)
+    threading.Thread(target=announcements.refresh_forever, daemon=True).start()
+    httpd = CardWarsServer((args.host, args.port), store, announcements)
     log.info("Card Wars server listening on %s:%d (db: %s)", args.host, args.port, os.path.abspath(args.db))
     try:
         httpd.serve_forever()
