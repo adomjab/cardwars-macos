@@ -52,13 +52,9 @@ or Spotlight like any other app.
    irm https://raw.githubusercontent.com/adomjab/cardwars-macos/main/install-windows.ps1 | iex
    ```
 
-The installer downloads the official Windows version of the game (about
-280 MB), connects it to our server, adds a **Card Wars** shortcut to your
-Desktop and Start menu, and opens the game.
-
-Start the game with that shortcut. The download also contains an updater
-(`CardWars.exe` in the outer folder), which the installer leaves out because
-it would switch the game back to the old server.
+The installer downloads the game (about 280 MB), connects it to our server,
+adds a **Card Wars** shortcut to your Desktop and Start menu, and opens the
+game. Always start the game with that shortcut.
 
 ## Logging in
 

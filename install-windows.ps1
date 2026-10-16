@@ -1,16 +1,21 @@
 # One-line installer for Card Wars on Windows. Players run in PowerShell:
 #   irm https://raw.githubusercontent.com/adomjab/cardwars-macos/main/install-windows.ps1 | iex
 #
-# Downloads the official Windows build from shishkabob27/CardWars, points it at
-# our game server, and adds Desktop and Start Menu shortcuts. Running it again
-# updates the game; saves are kept (they live outside the game folder).
+# Downloads our Windows build (with the same fixes as the Mac version) from this
+# repo's latest release, or shishkabob27/CardWars's original build if that
+# release has none. Points it at our game server and adds Desktop and Start
+# Menu shortcuts. Running it again updates the game; saves are kept (they live
+# outside the game folder).
 
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'   # the progress bar makes downloads very slow
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $Server  = 'http://35.229.126.223/'
-$ZipUrl  = 'https://github.com/shishkabob27/CardWars/releases/latest/download/CardWars-Windows.zip'
+$ZipUrls = @(
+    'https://github.com/adomjab/cardwars-macos/releases/latest/download/CardWars-Windows.zip',
+    'https://github.com/shishkabob27/CardWars/releases/latest/download/CardWars-Windows.zip'
+)
 $DataUrl = 'https://raw.githubusercontent.com/adomjab/cardwars-macos/main/gamedata'
 $Dest    = if ($env:CARDWARS_INSTALL_DIR) { $env:CARDWARS_INSTALL_DIR } else { Join-Path $env:LOCALAPPDATA 'CardWars' }
 $GameDir = Join-Path $Dest 'game'
@@ -38,16 +43,24 @@ try {
         Copy-Item $env:CARDWARS_ZIP $zip
     } else {
         Write-Step 'Downloading the game (about 280 MB, this can take a few minutes)...'
-        Invoke-WebRequest -Uri $ZipUrl -OutFile $zip -UseBasicParsing
+        foreach ($url in $ZipUrls) {
+            try {
+                Invoke-WebRequest -Uri $url -OutFile $zip -UseBasicParsing
+                break
+            } catch {
+                if ($url -eq $ZipUrls[-1]) { throw }
+            }
+        }
     }
 
     Write-Step 'Unpacking...'
     $unpacked = Join-Path $Work 'unpacked'
     Expand-Archive -Path $zip -DestinationPath $unpacked -Force
 
-    # The zip contains an updater (CardWars\CardWars.exe) and the real game in
-    # CardWars\game. We install only the game: the updater talks to the old
-    # server and could put the old server address back.
+    # shishkabob's zip contains an updater (CardWars\CardWars.exe) and the real
+    # game in CardWars\game. We install only the game: the updater talks to the
+    # old server and could put the old server address back. Our zip has just the
+    # game; either way the game is the CardWars.exe next to CardWars_Data.
     $exe = Get-ChildItem -Path $unpacked -Recurse -Filter 'CardWars.exe' |
         Where-Object { Test-Path (Join-Path $_.DirectoryName 'CardWars_Data') } |
         Select-Object -First 1
