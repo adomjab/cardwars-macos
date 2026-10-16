@@ -37,7 +37,8 @@ for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json db_S
   curl -fsSL -o "$TMP/$f" "https://raw.githubusercontent.com/$REPO/main/gamedata/$f"
   cp "$TMP/$f" "$BLUEPRINTS/$f" 2>/dev/null || sudo cp "$TMP/$f" "$BLUEPRINTS/$f"
   # A copy downloaded by the old server's content updates would win; remove it.
-  rm -f "$HOME/Library/Application Support/shishkabob/Card Wars/Contents/Blueprints/$f"
+  rm -f "$HOME/Library/Application Support/com.shishkabob.cardwars/Contents/Blueprints/$f" \
+        "$HOME/Library/Application Support/shishkabob/Card Wars/Contents/Blueprints/$f"
 done
 
 # The app isn't notarized by Apple; clear the download flag so macOS opens it,
