@@ -1,0 +1,8 @@
+[
+	{"ProductID":"at_vgp_bundle_01","PriceGems":"6","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
+	{"ProductID":"at_vgp_bundle_02","PriceGems":"14","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
+	{"ProductID":"at_vgp_bundle_03","PriceGems":"30","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
+	{"ProductID":"at_vgp_vamp_2015_01","PriceGems":"6","StartDate":"10-01","EndDate":"11-16","Placements":"main_menu,game_gacha"},
+	{"ProductID":"at_vgp_marceline_2015_01","PriceGems":"6","StartDate":"10-01","EndDate":"11-16","Placements":"main_menu,game_gacha"},
+	{"ProductID":"at_vgp_xmas_snowman_2015_01","PriceGems":"6","StartDate":"12-01","EndDate":"12-31","Placements":"main_menu,game_gacha"}
+]

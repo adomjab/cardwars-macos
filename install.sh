@@ -33,7 +33,7 @@ mv "$TMP/CardWars.app" "$DEST/" 2>/dev/null || sudo mv "$TMP/CardWars.app" "$DES
 # the gem prices, so Mac and Windows players get the same.
 echo "==> Adding events, gem prices and fixes..."
 BLUEPRINTS="$DEST/CardWars.app/Contents/Resources/Data/StreamingAssets/Blueprints"
-for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json db_Spells.json db_Characters.json db_Creatures.json; do
+for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json db_Spells.json db_Characters.json db_Creatures.json db_Offers.json; do
   curl -fsSL -o "$TMP/$f" "https://raw.githubusercontent.com/$REPO/main/gamedata/$f"
   cp "$TMP/$f" "$BLUEPRINTS/$f" 2>/dev/null || sudo cp "$TMP/$f" "$BLUEPRINTS/$f"
   # A copy downloaded by the old server's content updates would win; remove it.

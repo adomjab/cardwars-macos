@@ -108,6 +108,9 @@ Calendar link:
   coins for 36). The installers add these from the [`gamedata`](gamedata/)
   folder, along with a fix for the Fionna & Cake **level 24** crash, and
   Lumpy Space Princess and Prince battles play LSP's own music.
+- **Special offers:** now and then the main menu or the chests screen offers
+  one of the original card packs (Halloween and Christmas packs in season),
+  paid with gems instead of real money. At most one offer per screen a day.
 - **Cards have their original stats** from the mobile game (attack, defense,
   costs, floop costs and abilities), not the 2023 rebalance in the PC port. If you installed
   before they were added, run the install command again.
