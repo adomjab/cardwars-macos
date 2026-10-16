@@ -23,7 +23,7 @@ A patch for [shishkabob27/CardWars](https://github.com/shishkabob27/CardWars)
 | `Assets/Scripts/Assembly-CSharp/AIManager.cs` | Re-reads the opponent's lanes before every decision | The AI kept the lanes of the first battle setup; after the game reloaded (logging in, Options, reconnecting) it saw every lane as empty and played creatures and buildings on top of ones already in play ([issue #8](https://github.com/shishkabob27/CardWars/issues/8)) |
 | `Assets/StreamingAssets/Blueprints/db_Leaders.json` | `Leader_Gunter_FC` uses character `Gunter` instead of the non-existent `Gunter02` | Fionna & Cake level 24 (quest 5039) crashed / went black after its cutscene |
 | 56 prefabs and scenes (via `tools/fix_default_animations.py`) | Restores the default clip on 73 auto-playing Animation components that only have one clip | Recovering the project dropped these defaults, so nothing played: the chest "Nice/Rare/Very Rare/Algebraic Rare Card!" banners, "You Win/You Lose", hit/crit and spell effects, tombstones, animated scenery and menu idles |
-| `Assets/Editor/MacBuild.cs` (new) | Adds a **Card Wars > Build macOS** menu item and a batch-mode build method | A one-step macOS build |
+| `Assets/Editor/MacBuild.cs` (new) | Adds **Card Wars > Build macOS** and **Card Wars > Build Windows** menu items and batch-mode build methods | One-step builds; `build.sh` and `build-windows.sh` use them |
 
 The rest of the game code was already cross-platform. It has no native plugins,
 and the Windows-only checks in it (NGUI's half-pixel offset for Direct3D 9) are
@@ -77,6 +77,23 @@ open CardWars/Builds/macOS/CardWars.app
 You can also open `./CardWars` in Unity and choose **Card Wars > Build macOS**.
 To build from Windows, install the "Mac Build Support" module for 2017.4.40f1
 and use the same menu item.
+
+### The Windows version, built on a Mac
+
+The same patched project builds for Windows, so Windows players get the code
+fixes too. Add the **Windows Build Support** module first: Unity Hub >
+**Installs** > the **⋯** menu on 2017.4.40f1 > **Add modules** > tick
+**Windows Build Support** > Install. Then:
+
+```bash
+./build-windows.sh
+./package-windows.sh --server 35.229.126.223
+```
+
+This makes `CardWars-Windows.zip`. Upload it to the same release as
+`CardWars-macOS.zip`; `install-windows.ps1` uses it when the latest release
+has one. If the build fails, the details are in
+`CardWars/Builds/build-windows.log`.
 
 ## Notes
 

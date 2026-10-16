@@ -20,14 +20,27 @@ It looks for the app in `CardWars/Builds/macOS/` first, then
 `/Applications/`. To package a different copy, pass its path:
 `./package.sh /path/to/CardWars.app`.
 
+### The Windows version (optional, recommended)
+
+The Windows installer uses shishkabob's original Windows build unless your
+release has its own `CardWars-Windows.zip`. Building it gives Windows players
+the same fixes as the Mac version. It needs Unity's **Windows Build Support**
+module (Unity Hub > Installs > **⋯** on 2017.4.40f1 > Add modules):
+
+```
+./build-windows.sh
+./package-windows.sh --server 35.229.126.223
+```
+
 ## 2. Upload it as a GitHub Release
 
 1. Open https://github.com/adomjab/cardwars-macos/releases/new
 2. **Choose a tag**: type a version such as `v1` and click **Create new tag**.
 3. **Target**: leave it on `main`.
 4. **Title**: e.g. `Card Wars for macOS`.
-5. Drag `CardWars-macOS.zip` into the **Attach binaries** box and wait for the
-   upload to finish. Files up to 2 GB are fine.
+5. Drag `CardWars-macOS.zip` (and `CardWars-Windows.zip` if you built it)
+   into the **Attach binaries** box and wait for the upload to finish. Files
+   up to 2 GB are fine.
 6. Click **Publish release**.
 
 ## 3. Send your friends the link
@@ -37,8 +50,10 @@ https://github.com/adomjab/cardwars-macos
 
 ## Updating later
 
-Rebuild, run `./package.sh` again, and publish a new release (e.g. `v2`)
-with the new zip. The installer always downloads the latest release. Friends get the update by running
+Rebuild, run `./package.sh` (and `./package-windows.sh`) again, and publish a
+new release (e.g. `v2`) with the new zips. Always attach the Windows zip too
+once you've started building it: a release without one sends Windows players
+back to shishkabob's build. The installer always downloads the latest release. Friends get the update by running
 the install command again.
 
 ## Before you share

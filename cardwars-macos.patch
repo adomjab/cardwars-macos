@@ -1,27 +1,45 @@
 diff --git a/Assets/Editor/MacBuild.cs b/Assets/Editor/MacBuild.cs
 new file mode 100644
-index 00000000..e10be0ad
+index 00000000..41e2a160
 --- /dev/null
 +++ b/Assets/Editor/MacBuild.cs
-@@ -0,0 +1,57 @@
+@@ -0,0 +1,71 @@
 +using System;
 +using System.IO;
 +using System.Linq;
 +using UnityEditor;
 +using UnityEngine;
 +
-+// Builds a macOS .app of Card Wars.
-+// From the editor: menu "Card Wars > Build macOS".
++// Builds Card Wars for macOS or Windows (Windows needs the editor's
++// "Windows Build Support" module).
++// From the editor: menu "Card Wars > Build macOS" or "Card Wars > Build Windows".
 +// From the command line:
 +//   Unity -batchmode -quit -projectPath <project> -executeMethod MacBuild.BuildMacOS [-buildOutput <path/CardWars.app>]
++//   Unity -batchmode -quit -projectPath <project> -executeMethod MacBuild.BuildWindows [-buildOutput <path/CardWars.exe>]
 +public static class MacBuild
 +{
 +	private const string DefaultOutput = "Builds/macOS/CardWars.app";
 +
++	private const string DefaultWindowsOutput = "Builds/Windows/CardWars/CardWars.exe";
++
 +	[MenuItem("Card Wars/Build macOS")]
 +	public static void BuildMacOS()
 +	{
-+		string output = GetArg("-buildOutput") ?? DefaultOutput;
++		PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Standalone, "com.shishkabob.cardwars");
++		PlayerSettings.macRetinaSupport = true;
++		PlayerSettings.resizableWindow = true;
++		Build(BuildTarget.StandaloneOSX, GetArg("-buildOutput") ?? DefaultOutput, "macOS");
++	}
++
++	[MenuItem("Card Wars/Build Windows")]
++	public static void BuildWindows()
++	{
++		PlayerSettings.resizableWindow = true;
++		Build(BuildTarget.StandaloneWindows64, GetArg("-buildOutput") ?? DefaultWindowsOutput, "Windows");
++	}
++
++	private static void Build(BuildTarget target, string output, string label)
++	{
 +		Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(output)));
 +
 +		string[] scenes = EditorBuildSettings.scenes
@@ -29,23 +47,19 @@ index 00000000..e10be0ad
 +			.Select(s => s.path)
 +			.ToArray();
 +
-+		PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Standalone, "com.shishkabob.cardwars");
-+		PlayerSettings.macRetinaSupport = true;
-+		PlayerSettings.resizableWindow = true;
++		EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, target);
 +
-+		EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Standalone, BuildTarget.StandaloneOSX);
-+
-+		var report = BuildPipeline.BuildPlayer(scenes, output, BuildTarget.StandaloneOSX, BuildOptions.None);
++		var report = BuildPipeline.BuildPlayer(scenes, output, target, BuildOptions.None);
 +		if (!string.IsNullOrEmpty(report))
 +		{
-+			Debug.LogError("macOS build failed: " + report);
++			Debug.LogError(label + " build failed: " + report);
 +			if (UnityEditorInternal.InternalEditorUtility.inBatchMode)
 +			{
 +				EditorApplication.Exit(1);
 +			}
 +			return;
 +		}
-+		Debug.Log("macOS build written to " + Path.GetFullPath(output));
++		Debug.Log(label + " build written to " + Path.GetFullPath(output));
 +	}
 +
 +	private static string GetArg(string name)
