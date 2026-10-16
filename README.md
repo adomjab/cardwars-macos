@@ -7,6 +7,7 @@ against each other.
 - [Install on a Mac](#install-on-a-mac)
 - [Install on Windows](#install-on-windows)
 - [Logging in](#logging-in)
+- [Event reminders](#event-reminders)
 
 ## Install on a Mac
 
@@ -73,6 +74,28 @@ into the new account.
 
 - Mac (Terminal): `defaults delete "unity.shishkabob.Card Wars"`
 - Windows (PowerShell): `Remove-Item -Recurse "HKCU:\Software\shishkabob\Card Wars"`
+
+## Event reminders
+
+**In the game:** when you're logged in, a pop-up reminds you the day before
+each carnival (Halloween Festival, Rare Card Carnival, ...) and before the
+Halloween and Christmas months.
+
+**On your phone or computer:** subscribe to the event calendar and you'll get
+a notification one day before every event, even when the game is closed. It
+updates itself when the schedule changes.
+
+Calendar link:
+`https://raw.githubusercontent.com/adomjab/cardwars-macos/main/gamedata/CardWars-events.ics`
+
+- **iPhone:** Settings → Apps → Calendar → Calendar Accounts → Add Account →
+  Other → **Add Subscribed Calendar**, paste the link, tap Next, then make sure
+  **Remove Alerts is off** and tap Save.
+- **Mac:** Calendar app → File → **New Calendar Subscription**, paste the
+  link, and untick **Remove: Alerts**.
+- **Google Calendar** (computer): next to "Other calendars" click **+ → From
+  URL** and paste the link. Google ignores the built-in reminders, so open the
+  calendar's settings and add an event notification **1 day before**.
 
 ## Good to know
 

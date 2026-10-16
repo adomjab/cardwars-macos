@@ -1,0 +1,4079 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//adomjab//cardwars-macos//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Card Wars events
+X-PUBLISHED-TTL:P1D
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:carnival-swamp-20260114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260114T230000Z
+DTEND:20260117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20260128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260128T230000Z
+DTEND:20260131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20260210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260210T230000Z
+DTEND:20260214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20260218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260218T230000Z
+DTEND:20260221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20260225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260225T230000Z
+DTEND:20260228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20260303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260303T230000Z
+DTEND:20260306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20260310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260310T230000Z
+DTEND:20260313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20260317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260317T230000Z
+DTEND:20260320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20260324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260324T230000Z
+DTEND:20260327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20260331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260331T230000Z
+DTEND:20260403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20260417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260417T230000Z
+DTEND:20260419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20260427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260427T230000Z
+DTEND:20260429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20260506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260506T230000Z
+DTEND:20260508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20260527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260527T230000Z
+DTEND:20260605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20260622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260622T230000Z
+DTEND:20260628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20260707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260707T230000Z
+DTEND:20260710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20260721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260721T230000Z
+DTEND:20260724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20260804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260804T230000Z
+DTEND:20260807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20260818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260818T230000Z
+DTEND:20260821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20260901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260901T230000Z
+DTEND:20260905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20260915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20260915T230000Z
+DTEND:20260918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20261001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20261006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20261006T230000Z
+DTEND:20261010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20261028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20261028T230000Z
+DTEND:20261106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20261111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20261111T230000Z
+DTEND:20261118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20261125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20261125T230000Z
+DTEND:20261127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20261201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20270101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20261209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20261209T230000Z
+DTEND:20261225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20270114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270114T230000Z
+DTEND:20270117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20270128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270128T230000Z
+DTEND:20270131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20270210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270210T230000Z
+DTEND:20270214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20270218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270218T230000Z
+DTEND:20270221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20270225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270225T230000Z
+DTEND:20270228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20270303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270303T230000Z
+DTEND:20270306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20270310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270310T230000Z
+DTEND:20270313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20270317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270317T230000Z
+DTEND:20270320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20270324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270324T230000Z
+DTEND:20270327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20270331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270331T230000Z
+DTEND:20270403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20270417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270417T230000Z
+DTEND:20270419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20270427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270427T230000Z
+DTEND:20270429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20270506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270506T230000Z
+DTEND:20270508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20270527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270527T230000Z
+DTEND:20270605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20270622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270622T230000Z
+DTEND:20270628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20270707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270707T230000Z
+DTEND:20270710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20270721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270721T230000Z
+DTEND:20270724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20270804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270804T230000Z
+DTEND:20270807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20270818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270818T230000Z
+DTEND:20270821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20270901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270901T230000Z
+DTEND:20270905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20270915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20270915T230000Z
+DTEND:20270918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20271001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20271006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20271006T230000Z
+DTEND:20271010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20271028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20271028T230000Z
+DTEND:20271106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20271111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20271111T230000Z
+DTEND:20271118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20271125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20271125T230000Z
+DTEND:20271127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20271201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20280101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20271209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20271209T230000Z
+DTEND:20271225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20280114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280114T230000Z
+DTEND:20280117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20280128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280128T230000Z
+DTEND:20280131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20280210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280210T230000Z
+DTEND:20280214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20280218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280218T230000Z
+DTEND:20280221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20280225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280225T230000Z
+DTEND:20280228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20280303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280303T230000Z
+DTEND:20280306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20280310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280310T230000Z
+DTEND:20280313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20280317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280317T230000Z
+DTEND:20280320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20280324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280324T230000Z
+DTEND:20280327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20280331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280331T230000Z
+DTEND:20280403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20280417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280417T230000Z
+DTEND:20280419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20280427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280427T230000Z
+DTEND:20280429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20280506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280506T230000Z
+DTEND:20280508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20280527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280527T230000Z
+DTEND:20280605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20280622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280622T230000Z
+DTEND:20280628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20280707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280707T230000Z
+DTEND:20280710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20280721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280721T230000Z
+DTEND:20280724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20280804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280804T230000Z
+DTEND:20280807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20280818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280818T230000Z
+DTEND:20280821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20280901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280901T230000Z
+DTEND:20280905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20280915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20280915T230000Z
+DTEND:20280918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20281001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281001
+DTEND;VALUE=DATE:20281101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20281006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20281006T230000Z
+DTEND:20281010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20281028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20281028T230000Z
+DTEND:20281106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20281111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20281111T230000Z
+DTEND:20281118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20281125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20281125T230000Z
+DTEND:20281127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20281201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281201
+DTEND;VALUE=DATE:20290101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20281209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20281209T230000Z
+DTEND:20281225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20290114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290114T230000Z
+DTEND:20290117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20290128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290128T230000Z
+DTEND:20290131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20290210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290210T230000Z
+DTEND:20290214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20290218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290218T230000Z
+DTEND:20290221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20290225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290225T230000Z
+DTEND:20290228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20290303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290303T230000Z
+DTEND:20290306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20290310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290310T230000Z
+DTEND:20290313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20290317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290317T230000Z
+DTEND:20290320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20290324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290324T230000Z
+DTEND:20290327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20290331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290331T230000Z
+DTEND:20290403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20290417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290417T230000Z
+DTEND:20290419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20290427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290427T230000Z
+DTEND:20290429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20290506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290506T230000Z
+DTEND:20290508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20290527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290527T230000Z
+DTEND:20290605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20290622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290622T230000Z
+DTEND:20290628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20290707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290707T230000Z
+DTEND:20290710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20290721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290721T230000Z
+DTEND:20290724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20290804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290804T230000Z
+DTEND:20290807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20290818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290818T230000Z
+DTEND:20290821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20290901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290901T230000Z
+DTEND:20290905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20290915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20290915T230000Z
+DTEND:20290918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20291001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291001
+DTEND;VALUE=DATE:20291101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20291006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20291006T230000Z
+DTEND:20291010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20291028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20291028T230000Z
+DTEND:20291106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20291111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20291111T230000Z
+DTEND:20291118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20291125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20291125T230000Z
+DTEND:20291127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20291201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291201
+DTEND;VALUE=DATE:20300101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20291209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20291209T230000Z
+DTEND:20291225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20300114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300114T230000Z
+DTEND:20300117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20300128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300128T230000Z
+DTEND:20300131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20300210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300210T230000Z
+DTEND:20300214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20300218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300218T230000Z
+DTEND:20300221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20300225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300225T230000Z
+DTEND:20300228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20300303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300303T230000Z
+DTEND:20300306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20300310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300310T230000Z
+DTEND:20300313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20300317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300317T230000Z
+DTEND:20300320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20300324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300324T230000Z
+DTEND:20300327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20300331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300331T230000Z
+DTEND:20300403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20300417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300417T230000Z
+DTEND:20300419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20300427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300427T230000Z
+DTEND:20300429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20300506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300506T230000Z
+DTEND:20300508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20300527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300527T230000Z
+DTEND:20300605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20300622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300622T230000Z
+DTEND:20300628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20300707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300707T230000Z
+DTEND:20300710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20300721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300721T230000Z
+DTEND:20300724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20300804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300804T230000Z
+DTEND:20300807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20300818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300818T230000Z
+DTEND:20300821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20300901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300901T230000Z
+DTEND:20300905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20300915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20300915T230000Z
+DTEND:20300918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20301001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301001
+DTEND;VALUE=DATE:20301101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20301006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20301006T230000Z
+DTEND:20301010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20301028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20301028T230000Z
+DTEND:20301106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20301111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20301111T230000Z
+DTEND:20301118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20301125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20301125T230000Z
+DTEND:20301127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20301201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301201
+DTEND;VALUE=DATE:20310101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20301209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20301209T230000Z
+DTEND:20301225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20310114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310114T230000Z
+DTEND:20310117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20310128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310128T230000Z
+DTEND:20310131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20310210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310210T230000Z
+DTEND:20310214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20310218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310218T230000Z
+DTEND:20310221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20310225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310225T230000Z
+DTEND:20310228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20310303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310303T230000Z
+DTEND:20310306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20310310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310310T230000Z
+DTEND:20310313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20310317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310317T230000Z
+DTEND:20310320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20310324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310324T230000Z
+DTEND:20310327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20310331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310331T230000Z
+DTEND:20310403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20310417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310417T230000Z
+DTEND:20310419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20310427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310427T230000Z
+DTEND:20310429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20310506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310506T230000Z
+DTEND:20310508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20310527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310527T230000Z
+DTEND:20310605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20310622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310622T230000Z
+DTEND:20310628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20310707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310707T230000Z
+DTEND:20310710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20310721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310721T230000Z
+DTEND:20310724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20310804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310804T230000Z
+DTEND:20310807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20310818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310818T230000Z
+DTEND:20310821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20310901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310901T230000Z
+DTEND:20310905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20310915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20310915T230000Z
+DTEND:20310918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20311001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20311001
+DTEND;VALUE=DATE:20311101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20311006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20311006T230000Z
+DTEND:20311010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20311028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20311028T230000Z
+DTEND:20311106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20311111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20311111T230000Z
+DTEND:20311118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20311125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20311125T230000Z
+DTEND:20311127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20311201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20311201
+DTEND;VALUE=DATE:20320101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20311209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20311209T230000Z
+DTEND:20311225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20320114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320114T230000Z
+DTEND:20320117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20320128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320128T230000Z
+DTEND:20320131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20320210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320210T230000Z
+DTEND:20320214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20320218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320218T230000Z
+DTEND:20320221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20320225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320225T230000Z
+DTEND:20320228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20320303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320303T230000Z
+DTEND:20320306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20320310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320310T230000Z
+DTEND:20320313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20320317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320317T230000Z
+DTEND:20320320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20320324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320324T230000Z
+DTEND:20320327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20320331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320331T230000Z
+DTEND:20320403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20320417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320417T230000Z
+DTEND:20320419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20320427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320427T230000Z
+DTEND:20320429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20320506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320506T230000Z
+DTEND:20320508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20320527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320527T230000Z
+DTEND:20320605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20320622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320622T230000Z
+DTEND:20320628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20320707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320707T230000Z
+DTEND:20320710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20320721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320721T230000Z
+DTEND:20320724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20320804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320804T230000Z
+DTEND:20320807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20320818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320818T230000Z
+DTEND:20320821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20320901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320901T230000Z
+DTEND:20320905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20320915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20320915T230000Z
+DTEND:20320918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20321001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20321001
+DTEND;VALUE=DATE:20321101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20321006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20321006T230000Z
+DTEND:20321010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20321028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20321028T230000Z
+DTEND:20321106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20321111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20321111T230000Z
+DTEND:20321118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20321125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20321125T230000Z
+DTEND:20321127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20321201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20321201
+DTEND;VALUE=DATE:20330101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20321209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20321209T230000Z
+DTEND:20321225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20330114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330114T230000Z
+DTEND:20330117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20330128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330128T230000Z
+DTEND:20330131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20330210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330210T230000Z
+DTEND:20330214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20330218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330218T230000Z
+DTEND:20330221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20330225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330225T230000Z
+DTEND:20330228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20330303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330303T230000Z
+DTEND:20330306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20330310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330310T230000Z
+DTEND:20330313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20330317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330317T230000Z
+DTEND:20330320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20330324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330324T230000Z
+DTEND:20330327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20330331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330331T230000Z
+DTEND:20330403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20330417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330417T230000Z
+DTEND:20330419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20330427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330427T230000Z
+DTEND:20330429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20330506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330506T230000Z
+DTEND:20330508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20330527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330527T230000Z
+DTEND:20330605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20330622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330622T230000Z
+DTEND:20330628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20330707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330707T230000Z
+DTEND:20330710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20330721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330721T230000Z
+DTEND:20330724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20330804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330804T230000Z
+DTEND:20330807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20330818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330818T230000Z
+DTEND:20330821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20330901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330901T230000Z
+DTEND:20330905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20330915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20330915T230000Z
+DTEND:20330918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20331001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20331001
+DTEND;VALUE=DATE:20331101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20331006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20331006T230000Z
+DTEND:20331010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20331028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20331028T230000Z
+DTEND:20331106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20331111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20331111T230000Z
+DTEND:20331118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20331125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20331125T230000Z
+DTEND:20331127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20331201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20331201
+DTEND;VALUE=DATE:20340101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20331209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20331209T230000Z
+DTEND:20331225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20340114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340114T230000Z
+DTEND:20340117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20340128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340128T230000Z
+DTEND:20340131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20340210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340210T230000Z
+DTEND:20340214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20340218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340218T230000Z
+DTEND:20340221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20340225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340225T230000Z
+DTEND:20340228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20340303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340303T230000Z
+DTEND:20340306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20340310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340310T230000Z
+DTEND:20340313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20340317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340317T230000Z
+DTEND:20340320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20340324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340324T230000Z
+DTEND:20340327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20340331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340331T230000Z
+DTEND:20340403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20340417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340417T230000Z
+DTEND:20340419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20340427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340427T230000Z
+DTEND:20340429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20340506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340506T230000Z
+DTEND:20340508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20340527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340527T230000Z
+DTEND:20340605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20340622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340622T230000Z
+DTEND:20340628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20340707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340707T230000Z
+DTEND:20340710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20340721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340721T230000Z
+DTEND:20340724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20340804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340804T230000Z
+DTEND:20340807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20340818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340818T230000Z
+DTEND:20340821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20340901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340901T230000Z
+DTEND:20340905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20340915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20340915T230000Z
+DTEND:20340918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20341001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20341001
+DTEND;VALUE=DATE:20341101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20341006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20341006T230000Z
+DTEND:20341010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20341028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20341028T230000Z
+DTEND:20341106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20341111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20341111T230000Z
+DTEND:20341118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20341125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20341125T230000Z
+DTEND:20341127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20341201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20341201
+DTEND;VALUE=DATE:20350101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20341209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20341209T230000Z
+DTEND:20341225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20350114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350114T230000Z
+DTEND:20350117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20350128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350128T230000Z
+DTEND:20350131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20350210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350210T230000Z
+DTEND:20350214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20350218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350218T230000Z
+DTEND:20350221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20350225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350225T230000Z
+DTEND:20350228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20350303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350303T230000Z
+DTEND:20350306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20350310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350310T230000Z
+DTEND:20350313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20350317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350317T230000Z
+DTEND:20350320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20350324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350324T230000Z
+DTEND:20350327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20350331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350331T230000Z
+DTEND:20350403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20350417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350417T230000Z
+DTEND:20350419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20350427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350427T230000Z
+DTEND:20350429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20350506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350506T230000Z
+DTEND:20350508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20350527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350527T230000Z
+DTEND:20350605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20350622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350622T230000Z
+DTEND:20350628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20350707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350707T230000Z
+DTEND:20350710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20350721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350721T230000Z
+DTEND:20350724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20350804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350804T230000Z
+DTEND:20350807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20350818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350818T230000Z
+DTEND:20350821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20350901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350901T230000Z
+DTEND:20350905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20350915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20350915T230000Z
+DTEND:20350918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20351001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20351001
+DTEND;VALUE=DATE:20351101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20351006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20351006T230000Z
+DTEND:20351010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20351028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20351028T230000Z
+DTEND:20351106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20351111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20351111T230000Z
+DTEND:20351118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20351125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20351125T230000Z
+DTEND:20351127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20351201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20351201
+DTEND;VALUE=DATE:20360101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20351209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20351209T230000Z
+DTEND:20351225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20360114@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360114T230000Z
+DTEND:20360117T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20360128@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360128T230000Z
+DTEND:20360131T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20360210@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360210T230000Z
+DTEND:20360214T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20360218@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360218T230000Z
+DTEND:20360221T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20360225@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360225T230000Z
+DTEND:20360228T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20360303@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360303T230000Z
+DTEND:20360306T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20360310@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360310T230000Z
+DTEND:20360313T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20360317@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360317T230000Z
+DTEND:20360320T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20360324@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360324T230000Z
+DTEND:20360327T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20360331@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360331T230000Z
+DTEND:20360403T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20360417@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360417T230000Z
+DTEND:20360419T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20360427@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360427T230000Z
+DTEND:20360429T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20360506@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360506T230000Z
+DTEND:20360508T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20360527@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360527T230000Z
+DTEND:20360605T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-gold-20360622@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360622T230000Z
+DTEND:20360628T070000Z
+SUMMARY:Card Wars: Gold Gala
+DESCRIPTION:Gold Creatures have 3x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Gold Gala starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-leader-20360707@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360707T230000Z
+DTEND:20360710T070000Z
+SUMMARY:Card Wars: Hero Card Carnival
+DESCRIPTION:Hero Cards have 10x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Hero Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-swamp-20360721@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360721T230000Z
+DTEND:20360724T070000Z
+SUMMARY:Card Wars: Swamp Shindig
+DESCRIPTION:Swamp cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Swamp Shindig starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-sand-20360804@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360804T230000Z
+DTEND:20360807T070000Z
+SUMMARY:Card Wars: Sandy Beach Bash
+DESCRIPTION:Sandy Beach creatures have 5x chance to drop in the Algebraic C
+ hest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Sandy Beach Bash starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-cotton-20360818@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360818T230000Z
+DTEND:20360821T070000Z
+SUMMARY:Card Wars: Nicelands Jubilee
+DESCRIPTION:Nicelands cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Nicelands Jubilee starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-plains-20360901@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360901T230000Z
+DTEND:20360905T070000Z
+SUMMARY:Card Wars: Plains Party
+DESCRIPTION:Plains cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Plains Party starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-corn-20360915@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20360915T230000Z
+DTEND:20360918T070000Z
+SUMMARY:Card Wars: Corn Carnival
+DESCRIPTION:Corn cards have 5x chance to drop in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Corn Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-halloween-20361001@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20361001
+DTEND;VALUE=DATE:20361101
+SUMMARY:Card Wars: Halloween month
+DESCRIPTION:Halloween menu theme and Halloween battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20361006@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20361006T230000Z
+DTEND:20361010T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-halloween-20361028@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20361028T230000Z
+DTEND:20361106T070000Z
+SUMMARY:Card Wars: Halloween Festival
+DESCRIPTION:Limited Time Halloween Creatures and Buildings in the Halloween
+  Chest!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Halloween Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-rare-20361111@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20361111T230000Z
+DTEND:20361118T070000Z
+SUMMARY:Card Wars: Rare Card Carnival
+DESCRIPTION:3x chance for 4 and 5 star cards in the Algebraic Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Rare Card Carnival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-obsidian-20361125@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20361125T230000Z
+DTEND:20361127T070000Z
+SUMMARY:Card Wars: Obsidian Festival
+DESCRIPTION:For a Limited Time\, Black Cards are available in the Algebraic
+  Chest.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Obsidian Festival starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:holiday-christmas-20361201@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20361201
+DTEND;VALUE=DATE:20370101
+SUMMARY:Card Wars: Christmas month
+DESCRIPTION:Christmas menu theme and Christmas battles all month.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Christmas month starts tomorrow
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:carnival-holiday-20361209@cardwars-macos
+DTSTAMP:20260101T000000Z
+DTSTART:20361209T230000Z
+DTEND:20361225T070000Z
+SUMMARY:Card Wars: Holiday Festival
+DESCRIPTION:Limited Time Holiday Creatures and Buildings in the Holiday Che
+ st!
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+DESCRIPTION:Card Wars: Holiday Festival starts tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR
