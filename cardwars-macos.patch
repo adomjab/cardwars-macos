@@ -1213,11 +1213,257 @@ index d472f5b8..6efce272 100644
  		UICamera.useInputEnabler = true;
  		activateAnimationPlaying = true;
  		battleMapAnimation.CrossFade(animationActivate);
+diff --git a/Assets/Scripts/Assembly-CSharp/GemOffers.cs b/Assets/Scripts/Assembly-CSharp/GemOffers.cs
+new file mode 100644
+index 00000000..1763769b
+--- /dev/null
++++ b/Assets/Scripts/Assembly-CSharp/GemOffers.cs
+@@ -0,0 +1,164 @@
++using System;
++using System.Collections.Generic;
++using System.Globalization;
++using UnityEngine;
++
++// The special-offer packs (db_VirtualGoods) used to pop up through Upsight
++// and cost real money. Upsight is gone, so the same places in the game
++// (opening the main menu or the chests screen) now offer one of the packs
++// listed in db_Offers.json for gems. A pack's own gems are left out: you
++// pay with gems. Each place shows at most one offer a day.
++public static class GemOffers
++{
++	public class Offer
++	{
++		public VirtualGoods Goods;
++
++		public int PriceGems;
++	}
++
++	private const string LastShownKey = "GemOfferLastShown_";
++
++	private static List<Dictionary<string, object>> offers;
++
++	private static void Load()
++	{
++		if (offers != null)
++		{
++			return;
++		}
++		offers = new List<Dictionary<string, object>>();
++		Dictionary<string, object>[] data = null;
++		try
++		{
++			data = SQUtils.ReadJSONData("db_Offers.json");
++		}
++		catch (Exception ex)
++		{
++			TFUtils.DebugLog("No offers: " + ex.Message, "iap");
++		}
++		if (data != null)
++		{
++			offers.AddRange(data);
++		}
++	}
++
++	// "MM-dd" in local time; empty means always.
++	private static bool InSeason(string start, string end, DateTime now)
++	{
++		if (string.IsNullOrEmpty(start) || string.IsNullOrEmpty(end))
++		{
++			return true;
++		}
++		DateTime s;
++		DateTime e;
++		if (!DateTime.TryParseExact(now.Year + "-" + start, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out s) || !DateTime.TryParseExact(now.Year + "-" + end, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out e))
++		{
++			return false;
++		}
++		e = e.AddDays(1);
++		if (e <= s)
++		{
++			return now >= s || now < e;
++		}
++		return now >= s && now < e;
++	}
++
++	public static Offer PickOffer(string placement)
++	{
++		Load();
++		DateTime now = DateTime.Now;
++		string key = LastShownKey + placement;
++		if (PlayerPrefs.GetString(key, string.Empty) == now.ToString("yyyy-MM-dd"))
++		{
++			return null;
++		}
++		List<Offer> candidates = new List<Offer>();
++		foreach (Dictionary<string, object> dict in offers)
++		{
++			string placements = "," + TFUtils.LoadString(dict, "Placements", string.Empty).Replace(" ", string.Empty) + ",";
++			if (!placements.Contains("," + placement + ","))
++			{
++				continue;
++			}
++			if (!InSeason(TFUtils.LoadString(dict, "StartDate", string.Empty).Trim(), TFUtils.LoadString(dict, "EndDate", string.Empty).Trim(), now))
++			{
++				continue;
++			}
++			VirtualGoods goods = VirtualGoodsDataManager.Instance.GetVirtualGoods(TFUtils.LoadString(dict, "ProductID", string.Empty).Trim().ToLower());
++			int price = TFUtils.LoadInt(dict, "PriceGems", 0);
++			if (goods == null || price <= 0 || (goods.Cards.Count == 0 && goods.Hearts <= 0 && goods.Coins <= 0 && goods.Inventory <= 0))
++			{
++				continue;
++			}
++			candidates.Add(new Offer
++			{
++				Goods = goods,
++				PriceGems = price
++			});
++		}
++		if (candidates.Count == 0)
++		{
++			return null;
++		}
++		PlayerPrefs.SetString(key, now.ToString("yyyy-MM-dd"));
++		PlayerPrefs.Save();
++		return candidates[UnityEngine.Random.Range(0, candidates.Count)];
++	}
++
++	public static string Describe(Offer offer)
++	{
++		List<string> parts = new List<string>();
++		Dictionary<string, int> counts = new Dictionary<string, int>();
++		List<string> order = new List<string>();
++		foreach (string raw in offer.Goods.Cards)
++		{
++			string id = raw.Trim();
++			if (!counts.ContainsKey(id))
++			{
++				counts[id] = 0;
++				order.Add(id);
++			}
++			counts[id]++;
++		}
++		foreach (string id in order)
++		{
++			string name;
++			switch (id.ToLower())
++			{
++			case "gold":
++				name = "random Gold card";
++				break;
++			case "normal":
++				name = "random card";
++				break;
++			case "obsidian":
++				name = "random Black card";
++				break;
++			case "halloween":
++				name = "random Halloween card";
++				break;
++			default:
++			{
++				CardForm card = CardDataManager.Instance.GetCard(id);
++				name = (card != null) ? card.Name : id;
++				break;
++			}
++			}
++			parts.Add((counts[id] > 1) ? (counts[id] + "x " + name) : name);
++		}
++		if (offer.Goods.Coins > 0)
++		{
++			parts.Add(offer.Goods.Coins + " coins");
++		}
++		if (offer.Goods.Hearts > 0)
++		{
++			parts.Add(offer.Goods.Hearts + " hearts");
++		}
++		if (offer.Goods.Inventory > 0)
++		{
++			parts.Add("+" + offer.Goods.Inventory + " card slots");
++		}
++		return string.Join("\n", parts.ToArray());
++	}
++}
 diff --git a/Assets/Scripts/Assembly-CSharp/MenuController.cs b/Assets/Scripts/Assembly-CSharp/MenuController.cs
-index 2b082cf3..716cd8dc 100644
+index 2b082cf3..60584f17 100644
 --- a/Assets/Scripts/Assembly-CSharp/MenuController.cs
 +++ b/Assets/Scripts/Assembly-CSharp/MenuController.cs
-@@ -561,6 +561,17 @@ public class MenuController : ReloadHandler
+@@ -509,20 +509,68 @@ public class MenuController : ReloadHandler
+ 		}
+ 	}
+ 
++	// These "placements" used to show Upsight special offers for real money.
++	// Now they offer a pack from db_Offers.json for gems (see GemOffers).
+ 	private IEnumerator ShowPlacement(string placement, float waitSecs = 0f)
+ 	{
+ 		PlayerInfoScript pinfo = PlayerInfoScript.GetInstance();
+-		if (!(null == pinfo) && pinfo.IsCalendarUnlocked())
++		if (null == pinfo || !pinfo.IsCalendarUnlocked())
+ 		{
+-			UICamera.useInputEnabler = true;
+-			yield return KFFRequestorController.GetInstance().ShowContentCoroutine(placement, waitSecs);
+-			UICamera.useInputEnabler = false;
+-			KFFUpsightVGController upsightController = KFFUpsightVGController.GetInstance();
+-			while (upsightController != null && upsightController.IsPlacementInProgress)
++			yield break;
++		}
++		GemOffers.Offer offer = GemOffers.PickOffer(placement);
++		if (offer == null)
++		{
++			yield break;
++		}
++		if (waitSecs > 0f)
++		{
++			yield return new WaitForSeconds(waitSecs);
++		}
++		int choice = -1;
++		string message = GemOffers.Describe(offer) + "\n\nBuy for " + offer.PriceGems + " gems? You have " + pinfo.Gems + ".";
++		SLOTGame.GetInstance().ShowErrorPopup("Special Offer!", message, 3, new string[3]
++		{
++			null,
++			"Buy",
++			"No thanks"
++		}, delegate(int buttonIndex)
++		{
++			choice = buttonIndex;
++		});
++		while (choice == -1)
++		{
++			yield return null;
++		}
++		if (choice != 1)
++		{
++			yield break;
++		}
++		if (pinfo.Gems < offer.PriceGems)
++		{
++			SLOTGame.GetInstance().ShowErrorPopup("Special Offer!", "You need " + offer.PriceGems + " gems for this offer.", 1, new string[1] { string.Empty });
++			yield break;
++		}
++		pinfo.Gems -= offer.PriceGems;
++		pinfo.Coins += offer.Goods.Coins;
++		pinfo.Stamina += offer.Goods.Hearts;
++		pinfo.MaxInventory += offer.Goods.Inventory;
++		pinfo.Save();
++		YouGotThisController youGotThisController = (null == YouGotThis) ? null : YouGotThis.GetComponent<YouGotThisController>();
++		UICamera.useInputEnabler = true;
++		foreach (string card in offer.Goods.Cards)
++		{
++			if (null != youGotThisController)
++			{
++				yield return StartCoroutine(youGotThisController.AwardCard(card));
++			}
++			else
+ 			{
+-				yield return null;
++				pinfo.DeckManager.AddCardAward(card.Trim());
+ 			}
+ 		}
++		UICamera.useInputEnabler = false;
++		pinfo.Save();
+ 	}
+ 
+ 	public void SwitchToBattle()
+@@ -561,6 +609,17 @@ public class MenuController : ReloadHandler
  				}
  				yield return StartCoroutine(youGotThisController.AwardLeader("Leader_Fionna"));
  				yield return StartCoroutine(youGotThisController.AwardLeader("Leader_Cake"));
@@ -1422,6 +1668,20 @@ index 4242f105..e9e0c6c0 100644
  	{"ID":"Leader_MarshallLee","Name":"!!MARSHALL_LEE","CharacterID":"MarshallLee","IconAtlas":"CharacterIconAtlas02","SpriteName":"Portrait_MarshallLee_Frame","SpriteNameHero":"Portrait_MarshallLee_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_MARSHALLLEE_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ATKBonusAllCreaturesLeader","Cooldown":"3","Val1":"3","Val2":"","forFaction":"","forLandscape":"","forCardType":"","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"1","StartLevel":"7"},
  	{"ID":"Leader_SuperFinnDoctor","Name":"!!LEADER_FINNDOCTOR","CharacterID":"FinnDoctor","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_DoctorFinn_Frame","SpriteNameHero":"Portrait_DoctorFinn_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SUPERFINNDOCTOR_DESC","LvUpSchemeID":"A","Rarity":"5","BaseHP":"10","ScriptName":"ReturnCardTypeLeader","Cooldown":"2","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"Spell","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"0","StartLevel":"1"},
  	{"ID":"Leader_SuperPrincessBubblegum","Name":"!!LEADER_PRINCESSBUBBLEGUM","CharacterID":"PrincessBubblegum","IconAtlas":"CharacterIconAtlas","SpriteName":"Portrait_Princess_Frame","SpriteNameHero":"Portrait_Princess_Hero","FrameSpriteName":"Frame_Colorless","Desc":"!!LEADER_SUPERPRINCESSBUBBLEGUM_DESC","LvUpSchemeID":"A","Rarity":"1","BaseHP":"10","ScriptName":"HealAllCreaturesLeader","Cooldown":"2","Val1":"","Val2":"","forFaction":"","forLandscape":"","forCardType":"","Ring_P1_HitAreaRange":"0.8","Ring_P1_CritAreaRange":"0.07","Ring_P2_HitAreaRange":"0.15","Ring_P2_CritAreaRange":"0.05","Ring_P1_HitColor":"45:150:65:210","Ring_P1_CritColor":"0:255:0:255","Ring_P2_HitColor":"45:150:65:210","Ring_P2_CritColor":"0:255:0:255","TimeFor1SpinMin":"0.18","TimeFor1SpinMax":"0.23","Ring_BGSpriteAtlas":"CharacterIconAtlas","Ring_P1_BGSprite":"BattleRing_White","Ring_P1_BGColor":"173:55:55:173","Ring_P2_BGSprite":"BattleRing_White","Ring_P2_BGColor":"173:55:55:173","Ring_P1_BarSprite":"Ring_Bar_ATK","Ring_P2_BarSprite":"Ring_Bar_DEF","CritDamageMod":"2","FCWorld":"0","StartLevel":"2"},
+diff --git a/Assets/StreamingAssets/Blueprints/db_Offers.json b/Assets/StreamingAssets/Blueprints/db_Offers.json
+new file mode 100644
+index 00000000..f4075157
+--- /dev/null
++++ b/Assets/StreamingAssets/Blueprints/db_Offers.json
+@@ -0,0 +1,8 @@
++[
++	{"ProductID":"at_vgp_bundle_01","PriceGems":"6","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
++	{"ProductID":"at_vgp_bundle_02","PriceGems":"14","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
++	{"ProductID":"at_vgp_bundle_03","PriceGems":"30","StartDate":"","EndDate":"","Placements":"main_menu,game_gacha"},
++	{"ProductID":"at_vgp_vamp_2015_01","PriceGems":"6","StartDate":"10-01","EndDate":"11-16","Placements":"main_menu,game_gacha"},
++	{"ProductID":"at_vgp_marceline_2015_01","PriceGems":"6","StartDate":"10-01","EndDate":"11-16","Placements":"main_menu,game_gacha"},
++	{"ProductID":"at_vgp_xmas_snowman_2015_01","PriceGems":"6","StartDate":"12-01","EndDate":"12-31","Placements":"main_menu,game_gacha"}
++]
 diff --git a/ProjectSettings/ProjectSettings.asset b/ProjectSettings/ProjectSettings.asset
 index 4e2287c6..b9265584 100644
 --- a/ProjectSettings/ProjectSettings.asset
