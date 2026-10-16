@@ -1089,6 +1089,22 @@ index 1f08ab18..f4ec060a 100644
  		if (!(activeAnimation == null))
  		{
  			if (resetOnPlay)
+diff --git a/Assets/Scripts/Assembly-CSharp/AIManager.cs b/Assets/Scripts/Assembly-CSharp/AIManager.cs
+index 574f2cfe..b50336f0 100644
+--- a/Assets/Scripts/Assembly-CSharp/AIManager.cs
++++ b/Assets/Scripts/Assembly-CSharp/AIManager.cs
+@@ -92,6 +92,11 @@ public class AIManager
+ 
+ 	public AIDecision MakeDecision()
+ 	{
++		// GameState is replaced when the game reloads (logging in, Options,
++		// coming back online), but this manager outlives it. Lanes cached from
++		// the old GameState stay empty, so the AI "saw" free lanes that were
++		// occupied and summoned over cards already in play.
++		Lanes = GameState.Instance.GetLanes(PlayerType.Opponent);
+ 		DecisionList.Clear();
+ 		ConsiderCards();
+ 		ConsiderAbilities();
 diff --git a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs b/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
 index 4395455b..a26f0e49 100644
 --- a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
