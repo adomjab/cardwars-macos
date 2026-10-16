@@ -99,7 +99,7 @@ Calendar link:
   offline as a guest. Your progress is still saved on your computer.
 - Progress is saved here, and reinstalling or updating the game doesn't touch
   it:
-  - Mac: `~/Library/Application Support/shishkabob/Card Wars/`
+  - Mac: `~/Library/Application Support/com.shishkabob.cardwars/`
   - Windows: `%USERPROFILE%\AppData\LocalLow\shishkabob\Card Wars\`
 - To update, run the install command again.
 - **Events** (Halloween and Christmas battles and themes, monthly login
