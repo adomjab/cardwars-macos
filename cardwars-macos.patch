@@ -1268,6 +1268,147 @@ index bdf9599e..dd606f88 100644
  
  	private static string getJsonPath(string filePath)
  	{
+diff --git a/Assets/Scripts/Assembly-CSharp/SideQuestData.cs b/Assets/Scripts/Assembly-CSharp/SideQuestData.cs
+index 37c04219..02c0e9a9 100644
+--- a/Assets/Scripts/Assembly-CSharp/SideQuestData.cs
++++ b/Assets/Scripts/Assembly-CSharp/SideQuestData.cs
+@@ -55,9 +55,52 @@ public class SideQuestData
+ 
+ 	public string NPCFailIcon { get; private set; }
+ 
+-	public DateTime? EventStartDate { get; private set; }
++	// The seasonal side quests are dated 2015/2016. Their dates are treated
++	// as a window that repeats every year: these give this year's window, or
++	// last year's until this year's has started.
++	private DateTime? rawEventStartDate;
+ 
+-	public DateTime? EventEndDate { get; private set; }
++	private DateTime? rawEventEndDate;
++
++	public DateTime? EventStartDate
++	{
++		get
++		{
++			return ShiftToCurrentYear(rawEventStartDate);
++		}
++	}
++
++	public DateTime? EventEndDate
++	{
++		get
++		{
++			return ShiftToCurrentYear(rawEventEndDate);
++		}
++	}
++
++	private int YearsToCurrentWindow()
++	{
++		if (!rawEventStartDate.HasValue)
++		{
++			return 0;
++		}
++		DateTime now = TFUtils.ServerTime;
++		int years = now.Year - rawEventStartDate.Value.Year;
++		if (rawEventStartDate.Value.AddYears(years) > now)
++		{
++			years--;
++		}
++		return Math.Max(years, 0);
++	}
++
++	private DateTime? ShiftToCurrentYear(DateTime? date)
++	{
++		if (!date.HasValue)
++		{
++			return null;
++		}
++		return date.Value.AddYears(YearsToCurrentWindow());
++	}
+ 
+ 	public bool IsTimeLimitedEvent
+ 	{
+@@ -101,37 +144,33 @@ public class SideQuestData
+ 
+ 	public void IncStartDate(TimeSpan dt)
+ 	{
+-		if (EventStartDate.HasValue)
++		if (rawEventStartDate.HasValue)
+ 		{
+-			DateTime? eventStartDate = EventStartDate;
+-			EventStartDate = ((!eventStartDate.HasValue) ? null : new DateTime?(eventStartDate.Value + dt));
++			rawEventStartDate = rawEventStartDate.Value + dt;
+ 		}
+ 	}
+ 
+ 	public void DecStartDate(TimeSpan dt)
+ 	{
+-		if (EventStartDate.HasValue)
++		if (rawEventStartDate.HasValue)
+ 		{
+-			DateTime? eventStartDate = EventStartDate;
+-			EventStartDate = ((!eventStartDate.HasValue) ? null : new DateTime?(eventStartDate.Value - dt));
++			rawEventStartDate = rawEventStartDate.Value - dt;
+ 		}
+ 	}
+ 
+ 	public void IncEndDate(TimeSpan dt)
+ 	{
+-		if (EventEndDate.HasValue)
++		if (rawEventEndDate.HasValue)
+ 		{
+-			DateTime? eventEndDate = EventEndDate;
+-			EventEndDate = ((!eventEndDate.HasValue) ? null : new DateTime?(eventEndDate.Value + dt));
++			rawEventEndDate = rawEventEndDate.Value + dt;
+ 		}
+ 	}
+ 
+ 	public void DecEndDate(TimeSpan dt)
+ 	{
+-		if (EventEndDate.HasValue)
++		if (rawEventEndDate.HasValue)
+ 		{
+-			DateTime? eventEndDate = EventEndDate;
+-			EventEndDate = ((!eventEndDate.HasValue) ? null : new DateTime?(eventEndDate.Value - dt));
++			rawEventEndDate = rawEventEndDate.Value - dt;
+ 		}
+ 	}
+ 
+@@ -197,12 +236,12 @@ public class SideQuestData
+ 		text3 = TFUtils.LoadString(dict, "StartDate", string.Empty);
+ 		if (!string.IsNullOrEmpty(text3))
+ 		{
+-			EventStartDate = DateTime.Parse(text3);
++			rawEventStartDate = DateTime.Parse(text3);
+ 		}
+ 		text3 = TFUtils.LoadString(dict, "EndDate", string.Empty);
+ 		if (!string.IsNullOrEmpty(text3))
+ 		{
+-			EventEndDate = DateTime.Parse(text3);
++			rawEventEndDate = DateTime.Parse(text3);
+ 		}
+ 	}
+ 
+diff --git a/Assets/Scripts/Assembly-CSharp/SideQuestManager.cs b/Assets/Scripts/Assembly-CSharp/SideQuestManager.cs
+index 33d1f3eb..55d2035b 100644
+--- a/Assets/Scripts/Assembly-CSharp/SideQuestManager.cs
++++ b/Assets/Scripts/Assembly-CSharp/SideQuestManager.cs
+@@ -316,6 +316,16 @@ public class SideQuestManager : ILoadable
+ 						}
+ 					}
+ 				}
++				if (flag && sideQuestData.IsTimeLimitedEvent && sideQuestData.IsEventStarted && !sideQuestData.IsEventEnded)
++				{
++					// A new year's window of a seasonal side quest: one that failed
++					// or expired in an earlier year can be played again.
++					SideQuestProgress.SideQuestState oldState = instance.GetSideQuestState(sideQuestData);
++					if (oldState == SideQuestProgress.SideQuestState.Failed || oldState == SideQuestProgress.SideQuestState.Expired)
++					{
++						ResetSideQuest(sideQuestData);
++					}
++				}
+ 				if (flag)
+ 				{
+ 					switch (instance.GetSideQuestState(sideQuestData))
 diff --git a/Assets/StreamingAssets/Blueprints/db_Leaders.json b/Assets/StreamingAssets/Blueprints/db_Leaders.json
 index 4242f105..e9e0c6c0 100644
 --- a/Assets/StreamingAssets/Blueprints/db_Leaders.json
