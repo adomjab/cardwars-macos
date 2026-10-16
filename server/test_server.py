@@ -9,6 +9,7 @@ import http.cookiejar
 import json
 import os
 import socket
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -247,6 +248,51 @@ class ServerTest(unittest.TestCase):
         # Only the attacker can finish a match
         status, body, _ = b.post_form("multiplayer/matchmake/find/", {"name": "carol", "level": 1})
         self.assertEqual(status, 403)
+
+
+class SoloTest(ServerTest):
+    """A server with just one player (its own database)."""
+
+    test_multiplayer = None  # adds other players
+
+    def test_practice_and_tournament(self):
+        a = self.login("solo", "pw1234", "dev-solo")
+        a.get_json("multiplayer/player/solo")
+        deck = base64.b64encode(b"deck-of-solo").decode()
+        status, body, _ = a.post_form("multiplayer/new_player/", {
+            "name": "Solo", "icon": "icon", "deck": deck, "deck_rank": 10, "landscapes": "Corn",
+            "leader": "Finn", "leader_level": 1, "level": 1, "version": 0, "signature": "x"})
+        self.assertTrue(json.loads(body)["success"], body)
+
+        # Nobody else: practice against your own deck
+        status, body, _ = a.post_form("multiplayer/matchmake/find/", {"name": "solo", "level": 1, "version": 0})
+        self.assertEqual(status, 200, body)
+        match = json.loads(body)
+        self.assertEqual(match["name"], "Solo")
+        status, body, _ = a.post_form("multiplayer/matchmake/start/", {"match_id": match["match_id"]})
+        self.assertEqual(base64.b64decode(body), b"deck-of-solo")
+        status, body, _ = a.post_form("multiplayer/matchmake/complete/", {
+            "match_id": match["match_id"], "name": "solo", "loss": "False"})
+        self.assertEqual(int(json.loads(body)["data"]["trophies"]), match["wager_win"])
+        status, data = a.get_json("multiplayer/record/defense")
+        self.assertEqual(data["data"], [])  # practice isn't a defense
+
+        # Tournament ids are ones the game knows (db_Tournament.json: 1-216)
+        status, data = a.get_json("multiplayer/tournament/expiration/")
+        self.assertTrue(1 <= data["data"]["tournament_id"] <= 216, data)
+
+        # A reward from week 352 is offered and collected as tournament 353 % 216
+        db = sqlite3.connect(os.path.join(self.tmp, "test.db"))
+        db.execute("INSERT INTO rewards (username, tournament_id, rank) VALUES ('solo', 352, 1)")
+        db.commit()
+        status, data = a.get_json("multiplayer/tournament/player/?username=solo")
+        self.assertEqual(data["data"], [{"tournament_id": 352 % 216 + 1, "outcome": 1}])
+        status, body, _ = a.post_form("multiplayer/tournament/complete/", {
+            "username": "solo", "tournament_id": 352 % 216 + 1})
+        self.assertTrue(json.loads(body)["success"])
+        status, _ = a.get_json("multiplayer/tournament/player/?username=solo")
+        self.assertEqual(status, 404)
+        db.close()
 
 
 class MessagesTest(ServerTest):

@@ -232,8 +232,10 @@ Useful commands on the server:
 | Back up all accounts and saves | `sudo cp /var/lib/cardwars/cardwars.db ~/cardwars-backup.db` |
 
 What it does: accounts, cloud saves, multiplayer (you fight other players'
-saved decks), leaderboards and weekly tournaments (ending Monday 00:00 UTC).
-In-app purchases are switched off.
+saved decks), leaderboards and weekly tournaments (ending Monday 00:00 UTC,
+cycling through the game's 216 tournaments and their prizes). While you're the
+only player with a Deck Wars deck, you practice against a copy of your own
+deck. In-app purchases are switched off.
 
 ## Point the game at your server
 

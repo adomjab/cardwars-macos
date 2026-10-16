@@ -45,6 +45,10 @@ MATCH_TTL = 30 * 60
 LOGIN_FAILURE_LIMIT = 20  # per IP per 10 minutes
 TOURNAMENT_EPOCH = dt.datetime(2020, 1, 6, tzinfo=dt.timezone.utc)  # a Monday
 TOURNAMENT_LENGTH = dt.timedelta(days=7)
+# The game knows tournaments 1-216 (db_Tournament.json: name and prizes); a
+# week whose number it doesn't know shows "Tournament Name" and no countdown
+# or prizes. Weeks cycle through them.
+GAME_TOURNAMENTS = 216
 
 log = logging.getLogger("cardwars")
 
@@ -158,6 +162,10 @@ def hash_password(password, salt):
 
 def iso(ts):
     return dt.datetime.fromtimestamp(ts, dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def game_tournament_id(week):
+    return week % GAME_TOURNAMENTS + 1
 
 
 def current_tournament(now=None):
@@ -772,6 +780,9 @@ class Handler(BaseHTTPRequestHandler):
             opponents = self.store.all(
                 "SELECT * FROM mp_players WHERE username != ? AND deck != '' "
                 "ORDER BY ABS(trophies - ?) LIMIT 10", username, me["trophies"])
+            if not opponents and me["deck"]:
+                # Nobody else has a deck yet: practice against your own deck.
+                opponents = [me]
             if not opponents:
                 log.info("no opponents for %s", username)
                 return False
@@ -813,20 +824,27 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json({"success": True, "data": {"trophies": attacker["trophies"]}})
                 return True
             lost = self.form.get("loss", "").lower() == "true"
+            practice = match["attacker"] == match["defender"]
             if lost:
                 a_change = -match["wager_lose"]
                 d_change = match["wager_lose"] // 2
                 self.store.run("UPDATE mp_players SET trophies=MAX(0, trophies+?), losses=losses+1, streak=0 "
                                "WHERE username=?", a_change, match["attacker"])
-                self.store.run("UPDATE mp_players SET trophies=trophies+? WHERE username=?",
-                               d_change, match["defender"])
+                if practice:
+                    d_change = 0
+                else:
+                    self.store.run("UPDATE mp_players SET trophies=trophies+? WHERE username=?",
+                                   d_change, match["defender"])
             else:
                 a_change = match["wager_win"] + match["streak_bonus"]
                 d_change = -(match["wager_win"] // 2)
                 self.store.run("UPDATE mp_players SET trophies=trophies+?, wins=wins+1, streak=streak+1 "
                                "WHERE username=?", a_change, match["attacker"])
-                self.store.run("UPDATE mp_players SET trophies=MAX(0, trophies+?) WHERE username=?",
-                               d_change, match["defender"])
+                if practice:
+                    d_change = 0
+                else:
+                    self.store.run("UPDATE mp_players SET trophies=MAX(0, trophies+?) WHERE username=?",
+                                   d_change, match["defender"])
             self.store.run(
                 "UPDATE matches SET finished=?, attacker_won=?, attacker_change=?, defender_change=? WHERE id=?",
                 time.time(), 0 if lost else 1, a_change, d_change, match["id"])
@@ -851,7 +869,7 @@ class Handler(BaseHTTPRequestHandler):
             stats = self.store.one(
                 "SELECT SUM(CASE WHEN attacker_won=0 THEN 1 ELSE 0 END) AS wins, "
                 "SUM(CASE WHEN attacker_won=1 THEN 1 ELSE 0 END) AS losses "
-                "FROM matches WHERE defender=? AND finished > ?", me, since)
+                "FROM matches WHERE defender=? AND attacker != defender AND finished > ?", me, since)
             self.store.run("UPDATE mp_players SET last_notified=? WHERE username=?", time.time(), me)
             self.send_json({"success": True, "data": {
                 "wins": stats["wins"] or 0, "losses": stats["losses"] or 0, "rank": self.rank_of(row)}})
@@ -868,7 +886,8 @@ class Handler(BaseHTTPRequestHandler):
                 rows = self.store.all(
                     "SELECT m.*, p.name AS opp_name, p.icon AS opp_icon FROM matches m "
                     "JOIN mp_players p ON p.username = m.attacker "
-                    "WHERE m.defender=? AND m.finished IS NOT NULL ORDER BY m.finished DESC LIMIT 20", me)
+                    "WHERE m.defender=? AND m.attacker != m.defender AND m.finished IS NOT NULL "
+                    "ORDER BY m.finished DESC LIMIT 20", me)
                 data = [{"name": r["opp_name"], "icon": r["opp_icon"], "outcome": r["defender_change"],
                          "won": not r["attacker_won"], "date": iso(r["finished"])} for r in rows]
             self.send_json({"success": True, "data": data})
@@ -940,7 +959,7 @@ class Handler(BaseHTTPRequestHandler):
         if action == "expiration":
             tid, end = current_tournament()
             self.send_json({"success": True, "data": {
-                "tournament_id": tid, "time": end.strftime("%Y-%m-%dT%H:%M:%SZ")}})
+                "tournament_id": game_tournament_id(tid), "time": end.strftime("%Y-%m-%dT%H:%M:%SZ")}})
             return True
         if action == "player":
             username = self.query.get("username", "")
@@ -949,15 +968,15 @@ class Handler(BaseHTTPRequestHandler):
             if not rows:
                 return False  # 404 = nothing to collect
             self.send_json({"success": True, "data": [
-                {"tournament_id": r["tournament_id"], "outcome": r["rank"]} for r in rows]})
+                {"tournament_id": game_tournament_id(r["tournament_id"]), "outcome": r["rank"]} for r in rows]})
             return True
         if action == "complete":
             username = self.form.get("username", "")
             if not self.claim(username):
                 self.send_json({"success": False}, 403)
                 return True
-            self.store.run("UPDATE rewards SET redeemed=1 WHERE username=? AND tournament_id=?",
-                           username, to_int(self.form.get("tournament_id"), -1))
+            self.store.run("UPDATE rewards SET redeemed=1 WHERE username=? AND tournament_id % ? + 1 = ?",
+                           username, GAME_TOURNAMENTS, to_int(self.form.get("tournament_id"), -1))
             self.send_json({"success": True})
             return True
         return False
