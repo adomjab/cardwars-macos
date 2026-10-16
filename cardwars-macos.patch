@@ -1145,6 +1145,47 @@ index 574f2cfe..b50336f0 100644
  		DecisionList.Clear();
  		ConsiderCards();
  		ConsiderAbilities();
+diff --git a/Assets/Scripts/Assembly-CSharp/FCLaunchController.cs b/Assets/Scripts/Assembly-CSharp/FCLaunchController.cs
+index d472f5b8..6efce272 100644
+--- a/Assets/Scripts/Assembly-CSharp/FCLaunchController.cs
++++ b/Assets/Scripts/Assembly-CSharp/FCLaunchController.cs
+@@ -37,6 +37,14 @@ public class FCLaunchController : MonoBehaviour
+ 
+ 	public void OnClick()
+ 	{
++		// Fionna & Cake is free in this port, but it still starts the way the
++		// original did: the comic and the Donut Goon demo battles, which award
++		// the Fionna and Cake heroes and the F&C pack cards when finished.
++		if (!PlayerInfoScript.GetInstance().HasCompletedFCDemo())
++		{
++			LaunchFCDemo();
++			return;
++		}
+ 		UICamera.useInputEnabler = true;
+ 		activateAnimationPlaying = true;
+ 		battleMapAnimation.CrossFade(animationActivate);
+diff --git a/Assets/Scripts/Assembly-CSharp/MenuController.cs b/Assets/Scripts/Assembly-CSharp/MenuController.cs
+index 2b082cf3..716cd8dc 100644
+--- a/Assets/Scripts/Assembly-CSharp/MenuController.cs
++++ b/Assets/Scripts/Assembly-CSharp/MenuController.cs
+@@ -561,6 +561,17 @@ public class MenuController : ReloadHandler
+ 				}
+ 				yield return StartCoroutine(youGotThisController.AwardLeader("Leader_Fionna"));
+ 				yield return StartCoroutine(youGotThisController.AwardLeader("Leader_Cake"));
++				// The cards and gems that came with buying Fionna & Cake.
++				VirtualGoods fcPack = VirtualGoodsDataManager.Instance.GetVirtualGoods("at_vgp_fionnacake_01");
++				if (fcPack != null && pinfo.SetHasPurchasedFC(fcPack.ProductID))
++				{
++					foreach (string card in fcPack.Cards)
++					{
++						yield return StartCoroutine(youGotThisController.AwardCard(card));
++					}
++					pinfo.Gems += fcPack.Gems;
++					pinfo.Save();
++				}
+ 				PlayerInfoScript.GetInstance().SetHasReceivedFCCards();
+ 				Singleton<AnalyticsManager>.Instance.LogFCHeroesAwarded();
+ 				yield return new WaitForSeconds(2.5f);
 diff --git a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs b/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
 index 4395455b..a26f0e49 100644
 --- a/Assets/Scripts/Assembly-CSharp/SQContentPatcher.cs
