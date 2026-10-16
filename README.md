@@ -111,6 +111,10 @@ Calendar link:
 - **Special offers:** now and then the main menu or the chests screen offers
   one of the original card packs (Halloween and Christmas packs in season),
   paid with gems instead of real money. At most one offer per screen a day.
+- **Carnivals:** the Hero Card Carnival can give the six heroes that nothing
+  else gives (Doctor Finn, Pajama Finn and the Finn, Ice King, Lumpy Space
+  Princess and Princess Bubblegum sweater heroes), and the Rare Card Carnival
+  triples the chance of 5-star cards.
 - **Cards have their original stats** from the mobile game (attack, defense,
   costs, floop costs and abilities), not the 2023 rebalance in the PC port. If you installed
   before they were added, run the install command again.
