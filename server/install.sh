@@ -10,6 +10,12 @@ APP_DIR=/opt/cardwars
 DATA_DIR=/var/lib/cardwars
 PORT="${CARDWARS_PORT:-80}"
 
+if [ "$(uname -s)" != "Linux" ] || ! command -v apt-get >/dev/null 2>&1; then
+  echo "This installs the game server on your Linux server (the Google Cloud VM)," >&2
+  echo "not on this computer. Open the VM's SSH window and run it there." >&2
+  exit 1
+fi
+
 if [ "$(id -u)" -ne 0 ]; then
   echo "Please run with sudo." >&2
   exit 1
