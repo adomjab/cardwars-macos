@@ -110,7 +110,7 @@ has one. If the build fails, the details are in
   app and choose **Open**.
 - If graphics glitch on Metal, launch with OpenGL instead:
   `open CardWars.app --args -force-glcore`.
-- Save data goes in `~/Library/Application Support/shishkabob/Card Wars/`.
+- Save data goes in `~/Library/Application Support/com.shishkabob.cardwars/`.
 
 ## Game server
 

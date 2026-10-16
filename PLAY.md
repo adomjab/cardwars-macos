@@ -45,6 +45,6 @@ to get the login screen. Your progress is kept and moves into the new account.
 
 - If the game says **"Server did not respond. Retry?"**, choose **No** to play
   offline as a guest. Your progress is still saved on your Mac.
-- Progress is saved in `~/Library/Application Support/shishkabob/Card Wars/`.
+- Progress is saved in `~/Library/Application Support/com.shishkabob.cardwars/`.
   Reinstalling or updating the game doesn't touch it.
 - To update, run the install command again.
