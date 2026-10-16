@@ -620,6 +620,19 @@ index d00d4e3e..54126996 100644
    m_Animations:
    - {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
    m_WrapMode: 0
+diff --git a/Assets/Resources/props/FX_Battle_Spell_Volcano.prefab b/Assets/Resources/props/FX_Battle_Spell_Volcano.prefab
+index add0dd1a..f8ded312 100644
+--- a/Assets/Resources/props/FX_Battle_Spell_Volcano.prefab
++++ b/Assets/Resources/props/FX_Battle_Spell_Volcano.prefab
+@@ -793,7 +793,7 @@ Animation:
+   m_GameObject: {fileID: 1153657207883402}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 7400000, guid: ae6838fc794285f49bdda31082ce99c7, type: 2}
++  m_Animation: {fileID: 7400000, guid: 98b37a5cdfa78b040bd47fa164910635, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: ae6838fc794285f49bdda31082ce99c7, type: 2}
+   - {fileID: 7400000, guid: 98b37a5cdfa78b040bd47fa164910635, type: 2}
 diff --git a/Assets/Resources/props/GoldBag.prefab b/Assets/Resources/props/GoldBag.prefab
 index 2b39ef63..56e2f0c6 100644
 --- a/Assets/Resources/props/GoldBag.prefab
@@ -737,6 +750,19 @@ index 90734ef0..e6af88a1 100644
    m_Animations:
    - {fileID: 7400000, guid: 54b010ca954f03345a101f52d9ff636a, type: 2}
    m_WrapMode: 0
+diff --git a/Assets/Resources/props/low_FX_Battle_Spell_Volcano.prefab b/Assets/Resources/props/low_FX_Battle_Spell_Volcano.prefab
+index 96d1a641..6ed21338 100644
+--- a/Assets/Resources/props/low_FX_Battle_Spell_Volcano.prefab
++++ b/Assets/Resources/props/low_FX_Battle_Spell_Volcano.prefab
+@@ -793,7 +793,7 @@ Animation:
+   m_GameObject: {fileID: 1070257414585837}
+   m_Enabled: 1
+   serializedVersion: 3
+-  m_Animation: {fileID: 0}
++  m_Animation: {fileID: 7400000, guid: 98b37a5cdfa78b040bd47fa164910635, type: 2}
+   m_Animations:
+   - {fileID: 7400000, guid: ae6838fc794285f49bdda31082ce99c7, type: 2}
+   - {fileID: 7400000, guid: 98b37a5cdfa78b040bd47fa164910635, type: 2}
 diff --git a/Assets/Resources/props/low_GoldBag.prefab b/Assets/Resources/props/low_GoldBag.prefab
 index 401a387a..bf0e28ca 100644
 --- a/Assets/Resources/props/low_GoldBag.prefab
