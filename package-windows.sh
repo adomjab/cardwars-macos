@@ -41,7 +41,7 @@ else
 fi
 
 BLUEPRINTS="$GAME/CardWars_Data/StreamingAssets/Blueprints"
-for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json; do
+for f in db_Schedule.json db_GachaSchedule.json db_IAP.json db_Leaders.json db_Spells.json; do
   if curl -fsSL -m 30 -o "$BLUEPRINTS/$f.new" "https://raw.githubusercontent.com/adomjab/cardwars-macos/main/gamedata/$f"; then
     mv "$BLUEPRINTS/$f.new" "$BLUEPRINTS/$f"
   else
