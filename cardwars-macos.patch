@@ -578,6 +578,58 @@ index 19578363..5141ce39 100644
    m_Animations:
    - {fileID: 7400000, guid: 27baf464c07d48c45a84cd81e49eabda, type: 2}
    m_WrapMode: 0
+diff --git a/Assets/Resources/maps/sidequests/AlertWithCounter.anim b/Assets/Resources/maps/sidequests/AlertWithCounter.anim
+index 707e5b26..9a34b2b4 100644
+--- a/Assets/Resources/maps/sidequests/AlertWithCounter.anim
++++ b/Assets/Resources/maps/sidequests/AlertWithCounter.anim
+@@ -107,7 +107,7 @@ AnimationClip:
+       m_PostInfinity: 2
+       m_RotationOrder: 4
+     attribute: m_IsActive
+-    path: path_1865117838
++    path: SideQuestButton/ActiveItemFrame/ActiveItemIcon
+     classID: 1
+     script: {fileID: 0}
+   m_PPtrCurves: []
+diff --git a/Assets/Resources/maps/sidequests/HudShow.anim b/Assets/Resources/maps/sidequests/HudShow.anim
+index 9a08c0d0..00379408 100644
+--- a/Assets/Resources/maps/sidequests/HudShow.anim
++++ b/Assets/Resources/maps/sidequests/HudShow.anim
+@@ -120,7 +120,7 @@ AnimationClip:
+       m_PostInfinity: 2
+       m_RotationOrder: 4
+     attribute: m_IsActive
+-    path: path_1865117838
++    path: SideQuestButton/ActiveItemFrame/ActiveItemIcon
+     classID: 1
+     script: {fileID: 0}
+   m_PPtrCurves: []
+diff --git a/Assets/Resources/maps/sidequests/PanelGrow.anim b/Assets/Resources/maps/sidequests/PanelGrow.anim
+index d653dded..d1bfc086 100644
+--- a/Assets/Resources/maps/sidequests/PanelGrow.anim
++++ b/Assets/Resources/maps/sidequests/PanelGrow.anim
+@@ -51,7 +51,7 @@ AnimationClip:
+       m_PostInfinity: 2
+       m_RotationOrder: 4
+     attribute: m_IsActive
+-    path: path_817172509
++    path: SideQuestPanelCollider
+     classID: 1
+     script: {fileID: 0}
+   m_PPtrCurves: []
+diff --git a/Assets/Resources/maps/sidequests/PanelShrink.anim b/Assets/Resources/maps/sidequests/PanelShrink.anim
+index 1079ba76..3ce44dd3 100644
+--- a/Assets/Resources/maps/sidequests/PanelShrink.anim
++++ b/Assets/Resources/maps/sidequests/PanelShrink.anim
+@@ -63,7 +63,7 @@ AnimationClip:
+       m_PostInfinity: 2
+       m_RotationOrder: 4
+     attribute: m_IsActive
+-    path: path_817172509
++    path: SideQuestPanelCollider
+     classID: 1
+     script: {fileID: 0}
+   m_PPtrCurves: []
 diff --git a/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab b/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab
 index 83e486d2..5423bbb5 100644
 --- a/Assets/Resources/props/FX_Battle_Spell_BoneWand.prefab
